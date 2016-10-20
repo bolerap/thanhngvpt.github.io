@@ -27,7 +27,7 @@
 
 &lt;pre&gt;&lt;code&gt;import React from &#39;react&#39;;
 
-class Comment = React.Component {
+class Comment extends React.Component {
     ...
 }
 &lt;/code&gt;&lt;/pre&gt;
