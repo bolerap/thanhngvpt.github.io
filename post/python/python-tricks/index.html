@@ -44,8 +44,8 @@
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://thanhngvpt.github.io/"/>
         <meta itemprop="dateModified" content="2016-10-20T14:57:11&#43;07:00">
         <meta itemprop="headline" content="python tricks">
-        <meta itemprop="description" content=" Unpacking  Ví dụ
-a, b, c = 1, 2, 3 print(a, b, c)  ">
+        <meta itemprop="description" content="Unpacking
+# 1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # 2 a, b, c = (2 * i &#43; 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # 3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5  ">
         <meta itemprop="url" content="https://thanhngvpt.github.io/post/python/python-tricks/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="https://thanhngvpt.github.io/images/default.jpg" />
@@ -72,14 +72,19 @@ a, b, c = 1, 2, 3 print(a, b, c)  ">
         </header>
 
         <div class="article-body" itemprop="articleBody">
-          <ol>
-<li>Unpacking</li>
-</ol>
+          <p><strong>Unpacking</strong></p>
 
-<p>Ví dụ</p>
-
-<pre><code>a, b, c = 1, 2, 3
-print(a, b, c)
+<pre><code># 1
+a, b, c = 1, 2, 3
+d = a, b, c
+print(d, type(d)) # (1, 2, 3) - tuple
+# 2
+a, b, c = (2 * i + 1 for i in range(3))
+d = a, b, c
+print(d) # (1, 3, 5)
+# 3
+a, (b, c), d = [1, (2, 3), 5]
+print(a, b, c, d) # 1 2 3 5
 </code></pre>
 
         </div>
@@ -137,8 +142,8 @@ print(a, b, c)
     <div class="detail">
       <time>Thu, Oct 20, 2016</time>
       <h2 class="title">python tricks</h2>
-      <div class="summary"> Unpacking  Ví dụ
-a, b, c = 1, 2, 3 print(a, b, c)  </div>
+      <div class="summary">Unpacking
+# 1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # 2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # 3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5  </div>
     </div>
   </a>
 </article>
