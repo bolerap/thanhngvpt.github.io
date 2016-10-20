@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My New Hugo Site </title>
-    <link>https://thanhngvpt.github.io/index.xml</link>
+    <link>https://thanhngvpt.github.io/post/index.xml</link>
     <language>en-us</language>
     <author>thanhngvpt</author>
     <rights>(C) 2016</rights>
