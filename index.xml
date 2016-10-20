@@ -6,8 +6,27 @@
     <language>en-us</language>
     <author>thanhngvpt</author>
     <rights>(C) 2016</rights>
-    <updated>2016-10-20 14:38:05 &#43;0700 ICT</updated>
+    <updated>2016-10-20 14:57:11 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>python tricks</title>
+          <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
+          <pubDate>Thu, 20 Oct 2016 14:57:11 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
+          <description>&lt;p&gt;Các &lt;em&gt;tricks&lt;/em&gt; Python.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Unpacking&lt;/p&gt;
+
+&lt;p&gt;a, b, c = 1, 2, 3
+print(a, b, c)&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+      
     
       
         <item>
