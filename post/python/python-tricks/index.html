@@ -45,7 +45,7 @@
         <meta itemprop="dateModified" content="2016-10-20T14:57:11&#43;07:00">
         <meta itemprop="headline" content="python tricks">
         <meta itemprop="description" content="Unpacking
-# 1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # 2 a, b, c = (2 * i &#43; 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # 3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5  ">
+#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple #2 a, b, c = (2 * i &#43; 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5  ">
         <meta itemprop="url" content="https://thanhngvpt.github.io/post/python/python-tricks/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="https://thanhngvpt.github.io/images/default.jpg" />
@@ -74,17 +74,23 @@
         <div class="article-body" itemprop="articleBody">
           <p><strong>Unpacking</strong></p>
 
-<pre><code># 1
+<pre><code>#1
 a, b, c = 1, 2, 3
 d = a, b, c
 print(d, type(d)) # (1, 2, 3) - tuple
-# 2
+
+#2
 a, b, c = (2 * i + 1 for i in range(3))
 d = a, b, c
 print(d) # (1, 3, 5)
-# 3
+#3
 a, (b, c), d = [1, (2, 3), 5]
 print(a, b, c, d) # 1 2 3 5
+#4 - swapping variables
+a, b = 1, 2
+a, b = b, a
+print(a, b) # 2 1
+#5
 </code></pre>
 
         </div>
@@ -143,7 +149,7 @@ print(a, b, c, d) # 1 2 3 5
       <time>Thu, Oct 20, 2016</time>
       <h2 class="title">python tricks</h2>
       <div class="summary">Unpacking
-# 1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # 2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # 3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5  </div>
+#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple #2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5  </div>
     </div>
   </a>
 </article>
