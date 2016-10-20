@@ -19,11 +19,14 @@
           <description>&lt;p&gt;Các &lt;em&gt;tricks&lt;/em&gt; Python.&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Unpacking&lt;/p&gt;
-
-&lt;p&gt;a, b, c = 1, 2, 3
-print(a, b, c)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Unpacking&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;Ví dụ&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a, b, c = 1, 2, 3
+print(a, b, c)
+&lt;/code&gt;&lt;/pre&gt;
 </description>
         </item>
       
