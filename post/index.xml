@@ -6,8 +6,34 @@
     <language>en-us</language>
     <author>thanhngvpt</author>
     <rights>(C) 2016</rights>
-    <updated>2016-10-20 14:57:11 &#43;0700 ICT</updated>
+    <updated>2016-10-20 15:55:47 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>createClass vs Component in React</title>
+          <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
+          <pubDate>Thu, 20 Oct 2016 15:55:47 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
+          <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var Comment = react.createClass({
+    ...
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;hoặc&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import React from &#39;react&#39;;
+
+class Comment = React.Component {
+    ...
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
     
       
         <item>
