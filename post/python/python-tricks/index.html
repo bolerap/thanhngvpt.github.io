@@ -45,7 +45,7 @@
         <meta itemprop="dateModified" content="2016-10-20T14:57:11&#43;07:00">
         <meta itemprop="headline" content="Python tricks">
         <meta itemprop="description" content="Unpacking
-#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple #2 a, b, c = (2 * i &#43; 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5  ">
+#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # #2 a, b, c = (2 * i &#43; 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 # #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5 extended unpacking (python 3 only) a, b, *c = [1, 2, 3, 4, 5, 6] print(c) # [3, 4, 5, 6]  Negative indexing">
         <meta itemprop="url" content="https://thanhngvpt.github.io/post/python/python-tricks/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="https://thanhngvpt.github.io/images/default.jpg" />
@@ -78,18 +78,71 @@
 a, b, c = 1, 2, 3
 d = a, b, c
 print(d, type(d)) # (1, 2, 3) - tuple
+#
 #2
 a, b, c = (2 * i + 1 for i in range(3))
 d = a, b, c
 print(d) # (1, 3, 5)
+#
 #3
 a, (b, c), d = [1, (2, 3), 5]
 print(a, b, c, d) # 1 2 3 5
+#
 #4 - swapping variables
 a, b = 1, 2
 a, b = b, a
 print(a, b) # 2 1
-#5
+#5 extended unpacking (python 3 only)
+a, b, *c = [1, 2, 3, 4, 5, 6]
+print(c) # [3, 4, 5, 6]
+</code></pre>
+
+<p><strong>Negative indexing</strong></p>
+
+<pre><code>a = [1, 2, 3, 4, 5]
+print(a[0], a[-1]) # 1 5
+</code></pre>
+
+<p><strong>Slicing</strong></p>
+
+<pre><code>a = [1, 2, 3, 4, 5]
+print(a[1:3]) # [2, 3]
+print(a[-3:-1]) # [3, 4]
+print(a[::2]) # [1, 3, 5]
+print(a[::-1]) # [5, 4, 3, 2, 1]
+#
+# list slice assignment
+a[1:-1] = []
+print(a) # [1, 5]
+#
+# naming slice: slice(start, end, step)
+a = list(range(5))
+last_two = a[-2:]
+print(a[last_two]) # [4, 5]
+</code></pre>
+
+<p><strong>Iterating</strong></p>
+
+<pre><code># List
+a = ['Hello', &quot;World&quot;, 'Python']
+for i, v in enumerate(a):
+    print(i, v)
+#
+# Dictionary (dic_var_name.iteritems() in python 2)
+a = {'name': 'Peter', 'age': 25}
+for k, v in a.items():
+    print(k, v)
+</code></pre>
+
+<p><strong>Zipping and unzipping</strong></p>
+
+<pre><code># zipping
+a = [1, 2, 3]
+b = ['a', 'b', 'c']
+z = zip(a, b) # [(1, 'a'), (2, 'b'), (3, 'c')]
+#
+# Unzipping
+zip(*z) # [(1, 2, 3), ('1', 'b', 'c')]
 </code></pre>
 
         </div>
@@ -175,7 +228,7 @@ print(a, b) # 2 1
       <time>Thu, Oct 20, 2016</time>
       <h2 class="title">Python tricks</h2>
       <div class="summary">Unpacking
-#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple #2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5  </div>
+#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # #2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 # #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5 extended unpacking (python 3 only) a, b, *c = [1, 2, 3, 4, 5, 6] print(c) # [3, 4, 5, 6]  Negative indexing</div>
     </div>
   </a>
 </article>
