@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David&#39;s Notepad </title>
+    <link>https://thanhngvpt.github.io/categories/ecmascript/index.xml</link>
+    <language>en-us</language>
+    <author>thanhngvpt</author>
+    <rights>(C) 2016</rights>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>createClass vs Component in React</title>
+          <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
+          <pubDate>Thu, 20 Oct 2016 15:55:47 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
+          <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// cách 1
+const = react.createClass({
+    getInitialState() {
+        return {name: &#39;David&#39;}
+    },
+
+    propTypes: {},
+
+    getDefaultProps() {
+        return {}
+    },
+
+    handleClick() {
+        console.log(this);
+    },
+
+    render() {
+        return (
+            &amp;lt;div&amp;gt;
+                &amp;lt;h1&amp;gt;Hello, {this.state.name}&amp;lt;/h1&amp;gt;
+            &amp;lt;/div&amp;gt;
+        );
+    }
+});
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;hoặc&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// cách 2
+class Comment extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: &#39;David&#39;
+        };
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        console.log(this);
+    }
+
+    render() {
+        return (
+            &amp;lt;div&amp;gt;
+                &amp;lt;h1&amp;gt;Hello, {this.state.name}&amp;lt;/h1&amp;gt;
+            &amp;lt;/div&amp;gt;
+        );
+    }
+}
+
+Comment.propTypes = {};
+Comment.defaultProps = {};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Về bản chất hai cú pháp đều thực hiện công việc giống nhau, cách 1 sử dụng cú pháp ES5 cách 2 sử dụng cú pháp ES6. Vài điểm khác nhau giữa 2 cách như sau:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;initState: cách 1 dùng function getInitialState(), cách 2 set object trong constructor.&lt;/li&gt;
+&lt;li&gt;defaultProps: cách 1 là sử dụng function getDefaultProps(), cách 2 set object defaultProps.&lt;/li&gt;
+&lt;li&gt;handler Event: cách 1 tự động bind vào component khi gọi, cách 2 phải bind manual hoặc bind trong constructor.&lt;/li&gt;
+&lt;li&gt;mixin: cách 1 hỗ trợ, cách 2 không hỗ trợ&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
