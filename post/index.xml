@@ -6,8 +6,52 @@
     <language>en-us</language>
     <author>thanhngvpt</author>
     <rights>(C) 2016</rights>
-    <updated>2016-10-20 15:55:47 &#43;0700 ICT</updated>
+    <updated>2016-10-21 14:15:20 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Mode algorithm</title>
+          <link>https://thanhngvpt.github.io/post/go/mode-algorithm/</link>
+          <pubDate>Fri, 21 Oct 2016 14:15:20 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/go/mode-algorithm/</guid>
+          <description>&lt;p&gt;Mode algorithm là thuật toán được sử dụng để tìm ra phần tử lặp lại nhiều nhất trong một array. Source dưới đây cài đặt cho thuật toán tìm mode của 1 array sử dụng ngôn ngữ Go.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// sử dụng slice
+function sliceMode(input []int) int {
+    count := make([]input, len(input))
+    maxValue := 0
+    maxKey := 0
+    for i := range input {
+        count[input[i]]++
+        if count[input[i]] &amp;gt; maxValue {
+            maxValue = count[input[i]]
+            maxKey = input[i]
+        }
+    }
+
+    return maxKey
+}
+
+// sử dụng map
+function mapMode([]input) int {
+    count := make(map[int]int)
+    maxValue, maxKey := 0, 0
+    for i := range input {
+        count[input[i]]++
+        if count[input[i]] &amp;gt; maxValue {
+            maxValue = count[input[i]]
+            maxKey = input[i]
+        }
+    }
+
+    return maxKey
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
     
       
         <item>
