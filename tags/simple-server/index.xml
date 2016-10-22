@@ -16,9 +16,13 @@
           <pubDate>Sat, 22 Oct 2016 09:07:38 ICT</pubDate>
           <author>thanhngvpt</author>
           <guid>https://thanhngvpt.github.io/post/python/simple-python-server/</guid>
-          <description>&lt;p&gt;Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.
-&amp;gt; a server is a computer program or a device that provides functionality for other programs or devices
-Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.&lt;/p&gt;
+          <description>&lt;p&gt;Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;a server is a computer program or a device that provides functionality for other programs or devices&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.&lt;/p&gt;
 
 &lt;p&gt;cd tới thư mục muốn chia sẻ rồi chạy lệnh&lt;/p&gt;
 
