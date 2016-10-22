@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David&#39;s Notepad </title>
+    <link>https://thanhngvpt.github.io/tags/lan-file-sharing/index.xml</link>
+    <language>en-us</language>
+    <author>thanhngvpt</author>
+    <rights>(C) 2016</rights>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Simple Python server</title>
+          <link>https://thanhngvpt.github.io/post/python/simple-python-server/</link>
+          <pubDate>Sat, 22 Oct 2016 09:07:38 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/python/simple-python-server/</guid>
+          <description>&lt;p&gt;Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.
+&amp;gt; a server is a computer program or a device that provides functionality for other programs or devices
+Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.&lt;/p&gt;
+
+&lt;p&gt;cd tới thư mục muốn chia sẻ rồi chạy lệnh&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# python 3
+python -m http.server
+#
+# python 2
+python2 -m SimpleHTTPServer
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

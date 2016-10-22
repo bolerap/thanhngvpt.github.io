@@ -15,12 +15,12 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://thanhngvpt.github.io//index.xml">
 
     
-    <title>createClass vs Component in React - David&#39;s Notepad</title>
-    <meta property='og:title' content="createClass vs Component in React - David&#39;s Notepad">
+    <title>Simple Python server - David&#39;s Notepad</title>
+    <meta property='og:title' content="Simple Python server - David&#39;s Notepad">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://thanhngvpt.github.io/post/react/create-class-vs-component/">
+    <meta property="og:url" content="https://thanhngvpt.github.io/post/python/simple-python-server/">
     
     
 
@@ -42,12 +42,10 @@
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://thanhngvpt.github.io/"/>
-        <meta itemprop="dateModified" content="2016-10-20T15:55:47&#43;07:00">
-        <meta itemprop="headline" content="createClass vs Component in React">
-        <meta itemprop="description" content="Để tạo một react component ta có thể dùng cú pháp
-// cách 1 const = react.createClass({ getInitialState() { return {name: &#39;David&#39;} }, propTypes: {}, getDefaultProps() { return {} }, handleClick() { console.log(this); }, render() { return ( &lt;div&gt; &lt;h1&gt;Hello, {this.state.name}&lt;/h1&gt; &lt;/div&gt; ); } });  hoặc
-// cách 2 class Comment extends React.Component { constructor(props) { super(props); this.state = { name: &#39;David&#39; }; this.handleClick = this.handleClick.bind(this); } handleClick() { console.">
-        <meta itemprop="url" content="https://thanhngvpt.github.io/post/react/create-class-vs-component/">
+        <meta itemprop="dateModified" content="2016-10-22T09:07:38&#43;07:00">
+        <meta itemprop="headline" content="Simple Python server">
+        <meta itemprop="description" content="Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau. &gt; a server is a computer program or a device that provides functionality for other programs or devices Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.">
+        <meta itemprop="url" content="https://thanhngvpt.github.io/post/python/simple-python-server/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
           <meta itemprop="url" content="https://thanhngvpt.github.io/images/default.jpg" />
           <meta itemprop="width" content="800">
@@ -68,88 +66,35 @@
         <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
 
         <header class="article-header">
-          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-10-20T15:55:47&#43;07:00">Thu, Oct 20, 2016</time>
-          <h1 class="article-title">createClass vs Component in React</h1>
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-10-22T09:07:38&#43;07:00">Sat, Oct 22, 2016</time>
+          <h1 class="article-title">Simple Python server</h1>
         </header>
 
         <div class="article-body" itemprop="articleBody">
-          <p>Để tạo một react component ta có thể dùng cú pháp</p>
+          <p>Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.
+&gt; a server is a computer program or a device that provides functionality for other programs or devices
+Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.</p>
 
-<pre><code>// cách 1
-const = react.createClass({
-    getInitialState() {
-        return {name: 'David'}
-    },
+<p>cd tới thư mục muốn chia sẻ rồi chạy lệnh</p>
 
-    propTypes: {},
-
-    getDefaultProps() {
-        return {}
-    },
-
-    handleClick() {
-        console.log(this);
-    },
-
-    render() {
-        return (
-            &lt;div&gt;
-                &lt;h1&gt;Hello, {this.state.name}&lt;/h1&gt;
-            &lt;/div&gt;
-        );
-    }
-});
+<pre><code># python 3
+python -m http.server
+#
+# python 2
+python2 -m SimpleHTTPServer
 </code></pre>
-
-<p>hoặc</p>
-
-<pre><code>// cách 2
-class Comment extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            name: 'David'
-        };
-        this.handleClick = this.handleClick.bind(this);
-    }
-
-    handleClick() {
-        console.log(this);
-    }
-
-    render() {
-        return (
-            &lt;div&gt;
-                &lt;h1&gt;Hello, {this.state.name}&lt;/h1&gt;
-            &lt;/div&gt;
-        );
-    }
-}
-
-Comment.propTypes = {};
-Comment.defaultProps = {};
-</code></pre>
-
-<p>Về bản chất hai cú pháp đều thực hiện công việc giống nhau, cách 1 sử dụng cú pháp ES5 cách 2 sử dụng cú pháp ES6. Vài điểm khác nhau giữa 2 cách như sau:</p>
-
-<ul>
-<li>initState: cách 1 dùng function getInitialState(), cách 2 set object trong constructor.</li>
-<li>defaultProps: cách 1 là sử dụng function getDefaultProps(), cách 2 set object defaultProps.</li>
-<li>handler Event: cách 1 tự động bind vào component khi gọi, cách 2 phải bind manual hoặc bind trong constructor.</li>
-<li>mixin: cách 1 hỗ trợ, cách 2 không hỗ trợ</li>
-</ul>
 
         </div>
 
 
         <aside>
-          <div class="section"><a href="https://thanhngvpt.github.io/tags/React" class="tag">React</a> <a href="https://thanhngvpt.github.io/tags/Reactjs" class="tag">Reactjs</a> <a href="https://thanhngvpt.github.io/tags/React%20Component" class="tag">React Component</a> </div>
+          <div class="section"><a href="https://thanhngvpt.github.io/tags/http%20server" class="tag">http server</a> <a href="https://thanhngvpt.github.io/tags/simple%20server" class="tag">simple server</a> <a href="https://thanhngvpt.github.io/tags/LAN%20file%20sharing" class="tag">LAN file sharing</a> </div>
 
           <div class="section share">
-            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fthanhngvpt.github.io%2fpost%2freact%2fcreate-class-vs-component%2f&t=createClass%20vs%20Component%20in%20React" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2freact%2fcreate-class-vs-component%2f&text=createClass%20vs%20Component%20in%20React&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/share?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2freact%2fcreate-class-vs-component%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-            <a href="http://getpocket.com/edit?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2freact%2fcreate-class-vs-component%2f&title=createClass%20vs%20Component%20in%20React" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fsimple-python-server%2f&t=Simple%20Python%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fsimple-python-server%2f&text=Simple%20Python%20server&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fsimple-python-server%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fsimple-python-server%2f&title=Simple%20Python%20server" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
           </div>
 
           
