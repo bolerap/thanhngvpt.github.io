@@ -22,11 +22,10 @@
 
 &lt;p&gt;Các plugin hay nên cài trong vim: nerdtree, auto-pairs, neocomplete, syntastic, ack, gitv, fugitive.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Các câu lệnh và thao tác hữu ích trong vim&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Các câu lệnh và thao tác hữu ích trong vim&lt;/strong&gt;
+    1. windows&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;1. windows
-
-    - Chia cửa sổ hiện tại thành 2 cửa sổ nằm ngang ctrl + w, ctrl + S (shift + s).
+&lt;pre&gt;&lt;code&gt;    - Chia cửa sổ hiện tại thành 2 cửa sổ nằm ngang ctrl + w, ctrl + S (shift + s).
     - Chia cửa sổ hiện tại thành 2 cửa sổ nằm dọc ctrl + w, ctrl + v
     - Di chuyển qua lại giữa các cửa số nhấn ctrl+w 2 lần hoặc ấn ctrl+w rồi sử dụng phím di duyển (gồm: hjkl hoặc các phím mũi tên).
     - Thay đổi kích thước cửa sổ: 
