@@ -1,4 +1,4 @@
-<div class="index">
+<div class="single">
   <!DOCTYPE html>
 <html>
   <head>
@@ -15,14 +15,14 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://thanhngvpt.github.io//index.xml">
 
     
-    <title>Thanh&#39;s Notepad</title>
-    <meta property='og:title' content="Thanh&#39;s Notepad">
-    <meta property="og:type" content="website">
+    <title>Django practices - Thanh&#39;s Notepad</title>
+    <meta property='og:title' content="Django practices - Thanh&#39;s Notepad">
+    <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://thanhngvpt.github.io/">
+    <meta property="og:url" content="https://thanhngvpt.github.io/post/python/django/django-practices/">
     
-    
+    <meta property="og:image" content="https://thanhngvpt.github.io/images/django-practices.jpg">
 
   </head>
 
@@ -38,118 +38,160 @@
     <div class="container site">
 
 
+
   <div class="row">
     <div class="col-sm-9">
 
-      <div class="articles">
-        <div class="row">
-          
-          <div class="col-sm-6">
-            <article class="li">
-  <a href="https://thanhngvpt.github.io/post/python/django/django-practices/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/django-practices.jpg);"></div>
-    <div class="detail">
-      <time>Wed, Oct 26, 2016</time>
-      <h2 class="title">Django practices</h2>
-      <div class="summary">What is django?
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://thanhngvpt.github.io/"/>
+        <meta itemprop="dateModified" content="2016-10-26T11:20:47&#43;07:00">
+        <meta itemprop="headline" content="Django practices">
+        <meta itemprop="description" content="What is django?
  Lời mô tả súc tích từ https://djangoproject.com.   The web framework for perfectionists with deadlines
   Django là một MVT framework  Manage dependencies
 pip freeze &gt; requirements.txt pip install -r requirements.txt  Project layout
- Đặt tên app ngắn gọn, súc tích nhất có thể, nên cố gắng đặt tên bằng 1 chữ. Sử dụng kiến trúc nhiều app nhỏ thay vì một app lớn.</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
-          <div class="col-sm-6">
-            <article class="li">
-  <a href="https://thanhngvpt.github.io/post/tools/vim-usefuls/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/vim-useful.png);"></div>
-    <div class="detail">
-      <time>Sun, Oct 23, 2016</time>
-      <h2 class="title">Vim usefuls</h2>
-      <div class="summary">Vim là 1 trình soạn thảo văn bản nhỏ gọn nhưng cực kì khỏe, nếu được cài đầy đủ plugin nó hoàn toàn có thể sánh ngang các IDE hầm hố. Vim được khá nhiều dev lão luyện dùng điều này cho thấy nó khá tốt và cần đưa vào diện tình nghi ngay nếu chưa biết gì về nó.
-Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết các yêu cầu của các dev, để cài đặt plugin cho vim ta có thể sử dụng nhiều cách, tuy nhiên cách được sử dụng phổ biến và được khuyến khích là sử dụng một plugin manager, plugin manager lại có vài cái tên để lựa chọn như vundle, neobundle, pathogen &hellip; trong số này thì vundle là cái được khuyến khích.</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
-          <div class="col-sm-6">
-            <article class="li">
-  <a href="https://thanhngvpt.github.io/post/python/simple-python-server/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/simple-python-server.gif);"></div>
-    <div class="detail">
-      <time>Sat, Oct 22, 2016</time>
-      <h2 class="title">Simple Python server</h2>
-      <div class="summary">Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.
- a server is a computer program or a device that provides functionality for other programs or devices
- Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
-          <div class="col-sm-6">
-            <article class="li">
-  <a href="https://thanhngvpt.github.io/post/go/mode-algorithm/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/algorithm.jpg);"></div>
-    <div class="detail">
-      <time>Fri, Oct 21, 2016</time>
-      <h2 class="title">Mode algorithm</h2>
-      <div class="summary">Mode algorithm là thuật toán được sử dụng để tìm ra phần tử lặp lại nhiều nhất trong một array. Source dưới đây cài đặt cho thuật toán tìm mode của 1 array sử dụng ngôn ngữ Go.
-// sử dụng slice function sliceMode(input []int) int { count := make([]input, len(input)) maxValue := 0 maxKey := 0 for i := range input { count[input[i]]++ if count[input[i]] &gt; maxValue { maxValue = count[input[i]] maxKey = input[i] } } return maxKey } // sử dụng map function mapMode([]input) int { count := make(map[int]int) maxValue, maxKey := 0, 0 for i := range input { count[input[i]]++ if count[input[i]] &gt; maxValue { maxValue = count[input[i]] maxKey = input[i] } } return maxKey }  </div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
-          <div class="col-sm-4">
-            <article class="li">
-  <a href="https://thanhngvpt.github.io/post/react/create-class-vs-component/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/react-class-vs-component.png);"></div>
-    <div class="detail">
-      <time>Thu, Oct 20, 2016</time>
-      <h2 class="title">createClass vs Component in React</h2>
-      <div class="summary">Để tạo một react component ta có thể dùng cú pháp
-// cách 1 const = react.createClass({ getInitialState() { return {name: 'David'} }, propTypes: {}, getDefaultProps() { return {} }, handleClick() { console.log(this); }, render() { return ( &lt;div&gt; &lt;h1&gt;Hello, {this.state.name}&lt;/h1&gt; &lt;/div&gt; ); } });  hoặc
-// cách 2 class Comment extends React.Component { constructor(props) { super(props); this.state = { name: 'David' }; this.handleClick = this.handleClick.bind(this); } handleClick() { console.</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
-          <div class="col-sm-4">
-            <article class="li">
-  <a href="https://thanhngvpt.github.io/post/python/python-tricks/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/python-tricks.png);"></div>
-    <div class="detail">
-      <time>Thu, Oct 20, 2016</time>
-      <h2 class="title">Python tricks</h2>
-      <div class="summary">Unpacking
-#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # #2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 # #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5 extended unpacking (python 3 only) a, b, *c = [1, 2, 3, 4, 5, 6] print(c) # [3, 4, 5, 6]  Negative indexing</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
+ Đặt tên app ngắn gọn, súc tích nhất có thể, nên cố gắng đặt tên bằng 1 chữ. Sử dụng kiến trúc nhiều app nhỏ thay vì một app lớn.">
+        <meta itemprop="url" content="https://thanhngvpt.github.io/post/python/django/django-practices/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="https://thanhngvpt.github.io/images/django-practices.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
         </div>
-      </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://thanhngvpt.github.io/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Thanh&#39;s Notepad">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="thanhngvpt">
+        </div>
 
-      
+        <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/django-practices.jpg);"></div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-10-26T11:20:47&#43;07:00">Wed, Oct 26, 2016</time>
+          <h1 class="article-title">Django practices</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p><strong>What is django?</strong></p>
+
+<ul>
+<li>Lời mô tả súc tích từ <a href="https://djangoproject.com">https://djangoproject.com</a>.</li>
+</ul>
+
+<blockquote>
+<p>The web framework for perfectionists with deadlines</p>
+</blockquote>
+
+<ul>
+<li>Django là một MVT framework</li>
+</ul>
+
+<p><strong>Manage dependencies</strong></p>
+
+<pre><code>pip freeze &gt; requirements.txt
+pip install -r requirements.txt
+</code></pre>
+
+<p><strong>Project layout</strong></p>
+
+<ul>
+<li>Đặt tên app ngắn gọn, súc tích nhất có thể, nên cố gắng đặt tên bằng 1 chữ.</li>
+<li>Sử dụng kiến trúc nhiều app nhỏ thay vì một app lớn.</li>
+<li>Sử dụng triệt để các app built-in và 3rd-party app.</li>
+</ul>
+
+<p><strong>Settings</strong></p>
+
+<ul>
+<li>Sử dụng nhiều file settings cho mỗi env: production, dev, staging, testing.</li>
+<li>Sử dụng file settings cho mỗi user.</li>
+
+<li><p>Tất cả các file settings đều kế thừa từ base.</p>
+
+<p>INSTALLED_APP += (&lsquo;debug_toolbar&rsquo;, )</p></li>
+</ul>
+
+<p><strong>Fat models, thin views</strong></p>
+
+<ul>
+<li>Cố gắng giữ cho views đơn giản nhất có thể.</li>
+</ul>
+
+<p><strong>Deployment</strong></p>
+
+<ul>
+<li>Webserver: nginx + gunicorn + supervisord + docker.</li>
+<li>Static server: nginx, or amazone S3, CDN.</li>
+</ul>
+
+<p><strong>Asynchronous</strong></p>
+
+<ul>
+<li>Sử dụng celery để thực thi các task async.</li>
+<li>Sử dụng redis làm message queue cho celery.</li>
+</ul>
+
+<p><strong>Monitor error</strong></p>
+
+<ul>
+<li>Sử dụng triệt để python logger.</li>
+<li>Sử dụng sentry.</li>
+</ul>
+
+<p><strong>Debugging</strong></p>
+
+<ul>
+<li>Debug sử dụng trực tiếp của pycharm.</li>
+<li>Sử dụng thêm django-debug-toolbar.</li>
+</ul>
+
+        </div>
 
 
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fdjango%2fdjango-practices%2f&t=Django%20practices" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fdjango%2fdjango-practices%2f&text=Django%20practices&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fdjango%2fdjango-practices%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fpython%2fdjango%2fdjango-practices%2f&title=Django%20practices" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'thanhngvpt';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+          
+        </aside>
+
+      </article>
     </div>
 
     <div class="col-sm-3">
       <aside class="site">
 
+  
+  <div class="section">
+    <header><div class="title">TableOfContents</div></header>
+    <div class="list-default"></div>
+  </div>
   
 
   
@@ -272,6 +314,7 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
     </div>
 
   </div>
+
       </div>
 
     <footer class="site">
