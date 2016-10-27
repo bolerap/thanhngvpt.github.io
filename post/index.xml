@@ -27,8 +27,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Kiểm tra xem monitor đã được kết nối vào hệ thống chưa. Mở terminal và chạy lệnh.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;xrandr
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;p&gt;&lt;code&gt;xrandr&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;được thông tin dạng như sau&lt;/p&gt;
