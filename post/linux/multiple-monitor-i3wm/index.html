@@ -15,14 +15,14 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://thanhngvpt.github.io//index.xml">
 
     
-    <title>Vim usefuls - Thanh&#39;s Notepad</title>
-    <meta property='og:title' content="Vim usefuls - Thanh&#39;s Notepad">
+    <title>Multiple monitor i3wm - Thanh&#39;s Notepad</title>
+    <meta property='og:title' content="Multiple monitor i3wm - Thanh&#39;s Notepad">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://thanhngvpt.github.io/post/tools/vim-usefuls/">
+    <meta property="og:url" content="https://thanhngvpt.github.io/post/linux/multiple-monitor-i3wm/">
     
-    <meta property="og:image" content="https://thanhngvpt.github.io/images/vim-useful.png">
+    <meta property="og:image" content="https://thanhngvpt.github.io/images/multiple-monitor-i3wm.png">
 
   </head>
 
@@ -45,13 +45,15 @@
       <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
         <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://thanhngvpt.github.io/"/>
-        <meta itemprop="dateModified" content="2016-10-23T00:13:54&#43;07:00">
-        <meta itemprop="headline" content="Vim usefuls">
-        <meta itemprop="description" content="Vim là 1 trình soạn thảo văn bản nhỏ gọn nhưng cực kì khỏe, nếu được cài đầy đủ plugin nó hoàn toàn có thể sánh ngang các IDE hầm hố. Vim được khá nhiều dev lão luyện dùng điều này cho thấy nó khá tốt và cần đưa vào diện tình nghi ngay nếu chưa biết gì về nó.
-Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết các yêu cầu của các dev, để cài đặt plugin cho vim ta có thể sử dụng nhiều cách, tuy nhiên cách được sử dụng phổ biến và được khuyến khích là sử dụng một plugin manager, plugin manager lại có vài cái tên để lựa chọn như vundle, neobundle, pathogen &hellip; trong số này thì vundle là cái được khuyến khích.">
-        <meta itemprop="url" content="https://thanhngvpt.github.io/post/tools/vim-usefuls/">
+        <meta itemprop="dateModified" content="2016-10-27T15:42:47&#43;07:00">
+        <meta itemprop="headline" content="Multiple monitor i3wm">
+        <meta itemprop="description" content="What is i3?
+ i3 is a tiling window manager, completely written from scratch. The target platforms are GNU/Linux and BSD operating systems, our code is Free and Open Source Software (FOSS) under the BSD license. i3 is primarily targeted at advanced users and developers. Based upon the experiences we made when wanting to hack/fix wmii, we agreed upon the following goals for i3
+ Working with multiple monitor
+ Kiểm tra xem monitor đã được kết nối vào hệ thống chưa.">
+        <meta itemprop="url" content="https://thanhngvpt.github.io/post/linux/multiple-monitor-i3wm/">
         <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
-          <meta itemprop="url" content="https://thanhngvpt.github.io/images/vim-useful.png" />
+          <meta itemprop="url" content="https://thanhngvpt.github.io/images/multiple-monitor-i3wm.png" />
           <meta itemprop="width" content="800">
           <meta itemprop="height" content="800">
         </div>
@@ -67,35 +69,65 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
           <meta itemprop="name" content="thanhngvpt">
         </div>
 
-        <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/vim-useful.png);"></div>
+        <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/multiple-monitor-i3wm.png);"></div>
 
         <header class="article-header">
-          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-10-23T00:13:54&#43;07:00">Sun, Oct 23, 2016</time>
-          <h1 class="article-title">Vim usefuls</h1>
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-10-27T15:42:47&#43;07:00">Thu, Oct 27, 2016</time>
+          <h1 class="article-title">Multiple monitor i3wm</h1>
         </header>
 
         <div class="article-body" itemprop="articleBody">
-          <p>Vim là 1 trình soạn thảo văn bản nhỏ gọn nhưng cực kì khỏe, nếu được cài đầy đủ plugin nó hoàn toàn có thể sánh ngang các IDE hầm hố. Vim được khá nhiều dev lão luyện dùng điều này cho thấy nó khá tốt và cần đưa vào diện tình nghi ngay nếu chưa biết gì về nó.</p>
+          <p><strong>What is i3?</strong></p>
 
-<p>Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết các yêu cầu của các dev, để cài đặt plugin cho vim ta có thể sử dụng nhiều cách, tuy nhiên cách được sử dụng phổ biến và được khuyến khích là sử dụng một plugin manager, plugin manager lại có vài cái tên để lựa chọn như vundle, neobundle, pathogen &hellip; trong số này thì vundle là cái được khuyến khích. Để cài một plugin sử dụng vundle có thể thêm plugin đó vào file .vimrc hoặc khởi động vim và chạy lệnh :PluginInstall name. Dưới đây là danh sách các plugin nên có.</p>
+<blockquote>
+<p>i3 is a tiling window manager, completely written from scratch. The target platforms are GNU/Linux and BSD operating systems, our code is Free and Open Source Software (FOSS) under the BSD license. i3 is primarily targeted at advanced users and developers. Based upon the experiences we made when wanting to hack/fix wmii, we agreed upon the following goals for i3</p>
+</blockquote>
 
-<p>Các plugin hay nên cài trong vim: nerdtree, auto-pairs, neocomplete, syntastic, ack, gitv, fugitive.</p>
-
-<p><strong>Các câu lệnh và thao tác hữu ích trong vim</strong></p>
-
-<ol>
-<li>windows</li>
-</ol>
+<p><strong>Working with multiple monitor</strong></p>
 
 <ul>
-<li>Chia cửa sổ hiện tại thành 2 cửa sổ nằm ngang ctrl + w, ctrl + S (shift + s).</li>
-<li>Chia cửa sổ hiện tại thành 2 cửa sổ nằm dọc ctrl + w, ctrl + v</li>
-<li>Di chuyển qua lại giữa các cửa số nhấn ctrl+w 2 lần hoặc ấn ctrl+w rồi sử dụng phím di duyển (gồm: hjkl hoặc các phím mũi tên).</li>
-<li>Thay đổi kích thước cửa sổ:
+<li><p>Kiểm tra xem monitor đã được kết nối vào hệ thống chưa. Mở terminal và chạy lệnh.</p>
+
+<p>xrandr</p></li>
+</ul>
+
+<p>được thông tin dạng như sau</p>
+
+<pre><code>Screen 0: minimum 8 x 8, current 2732 x 768, maximum 32767 x 32767
+LVDS1 connected 1366x768+1366+0 (normal left inverted right x axis y axis) 310mm x 170mm
+   1366x768      60.10*+
+   1024x768      60.00  
+   1024x576      60.00  
+   960x540       60.00  
+   800x600       60.32    56.25  
+   864x486       60.00  
+   640x480       59.94  
+   720x405       60.00  
+   680x384       60.00  
+   640x360       60.00  
+DP1 disconnected (normal left inverted right x axis y axis)
+HDMI1 disconnected (normal left inverted right x axis y axis)
+VGA1 connected 1366x768+0+0 (normal left inverted right x axis y axis) 410mm x 230mm
+   1366x768      59.79*+
+   1280x1024     60.02  
+   1280x720      60.00  
+   1024x768      60.00  
+   800x600       60.32  
+   640x480       59.94  
+   720x400       70.08  
+VIRTUAL1 disconnected (normal left inverted right x axis y axis)
+</code></pre>
 
 <ul>
-<li>Horizontal (ngang) gõ lệnh :<number_of_column>winc +/- (tăng/giảm).</li>
-<li>Vertical (dọc) gõ lệnh :<number_of_comlumn>winc &gt;/&lt; (tăng/giảm).</li>
+<li><p>Chạy tiếp lệnh.</p>
+
+<p>xrandr &ndash;ouput VGA1 &ndash;auto &ndash;left-of LVDS1</p></li>
+
+<li><p>Trong đó:</p>
+
+<ul>
+<li>VGÁ, LVDS, HDMI1 là tên của các monitor device đã connect vào trong hệ thông.</li>
+<li>Các tham số: &ndash;output, &ndash;auto, &ndash;left-of quyết định hiển thị của monitor (xem help để biết thêm).</li>
 </ul></li>
 </ul>
 
@@ -103,13 +135,13 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
 
 
         <aside>
-          <div class="section"><a href="https://thanhngvpt.github.io/tags/vim" class="tag">vim</a> <a href="https://thanhngvpt.github.io/tags/editor" class="tag">editor</a> </div>
+          
 
           <div class="section share">
-            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fthanhngvpt.github.io%2fpost%2ftools%2fvim-usefuls%2f&t=Vim%20usefuls" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
-            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2ftools%2fvim-usefuls%2f&text=Vim%20usefuls&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
-            <a href="https://plus.google.com/share?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2ftools%2fvim-usefuls%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
-            <a href="http://getpocket.com/edit?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2ftools%2fvim-usefuls%2f&title=Vim%20usefuls" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fthanhngvpt.github.io%2fpost%2flinux%2fmultiple-monitor-i3wm%2f&t=Multiple%20monitor%20i3wm" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2flinux%2fmultiple-monitor-i3wm%2f&text=Multiple%20monitor%20i3wm&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2flinux%2fmultiple-monitor-i3wm%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2flinux%2fmultiple-monitor-i3wm%2f&title=Multiple%20monitor%20i3wm" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
           </div>
 
           
