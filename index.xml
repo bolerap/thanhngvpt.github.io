@@ -66,10 +66,12 @@ VIRTUAL1 disconnected (normal left inverted right x axis y axis)
 &lt;li&gt;&lt;p&gt;Trong đó:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;VGÁ, LVDS, HDMI1 là tên của các monitor device đã connect vào trong hệ thông.&lt;/li&gt;
+&lt;li&gt;VGA1, LVDS, HDMI1 là tên của các monitor device đã connect vào trong hệ thông.&lt;/li&gt;
 &lt;li&gt;Các tham số: &amp;ndash;output, &amp;ndash;auto, &amp;ndash;left-of quyết định hiển thị của monitor (xem help để biết thêm).&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;Xem thêm tại &lt;a href=&#34;https://thanhngvpt.github.io/post/linux/multiple-monitor-i3wm/&#34;&gt;mulitple monitor in i3wm&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
       
