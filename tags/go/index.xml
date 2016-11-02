@@ -30,8 +30,12 @@
 argument v trong function &lt;code&gt;doSomething()&lt;/code&gt; có type là &lt;code&gt;interface{}&lt;/code&gt; chứ không phải any type như nhiều người lầm tưởng. Phân tích thêm chút phần này nào, flow sẽ là khi truyền 1 vào &lt;code&gt;doSomthing()&lt;/code&gt; một argument go runtime sẽ thực hiện type conversion nếu cần thiết và convert value sang &lt;code&gt;interface{}&lt;/code&gt; value. Mọi value đều chỉ có chính xác 1 type khi runtime và type của &lt;code&gt;v&lt;/code&gt; sẽ là &lt;code&gt;interface{}&lt;/code&gt;. Vậy dữ liệu thực tế được truyền vào &lt;code&gt;doSomthing()&lt;/code&gt; là &lt;code&gt;interface{}&lt;/code&gt; value à? Có gì đó sai sai nhỉ? Lại phân tích tiếp nào.&lt;/p&gt;
 
 &lt;p&gt;Một interface value được kiến tạo vởi 2 phần data như sau:
-    - Một phần trỏ tới method table dành cho underlying type của interface value.
+    - Một con trỏ trỏ tới method table dành cho underlying type của interface value.
     - Một phần trỏ tới data thực sự được lưu trữ bởi interface value.&lt;/p&gt;
+
+&lt;p&gt;Cùng xem xét một ví dụ về interface như sau &lt;script src=&#34;//gist.github.com/thanhngvpt/7ab0a20f868e9ee511cff8c4f17bda5d.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;Trong ví dụ trên ta khai báo biến slice &lt;code&gt;vehicles&lt;/code&gt; là &lt;code&gt;Vehicle&lt;/code&gt; value (interface value), mỗi phần tử của &lt;code&gt;vehicles&lt;/code&gt; đều có underlying data khác nhau.&lt;/p&gt;
 </description>
         </item>
       
