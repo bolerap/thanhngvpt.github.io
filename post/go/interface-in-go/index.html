@@ -88,7 +88,12 @@ Trong go không có từ khóa implement tường minh như một vài ngôn ng�
 
 <p><strong>Empty interface</strong></p>
 
-<p>Empty interface là <code>interface{}</code>, empty interface không có method nào, vì trong go không có keyword implement nên mọi type đều implement ít nhất là zero method và như vậy là thỏa mãn điều kiện implement của empty interface. Nó chính là nguồn gốc của những phức tạp khi sử dụng interface. Ví dụ với function <code>doSomthing()</code> dưới đây. <script src="//gist.github.com/thanhngvpt/1e6dc031374ea543a70c90a9ad0f7f53.js"></script></p>
+<p>Empty interface là <code>interface{}</code>, empty interface không có method nào, vì trong go không có keyword implement nên mọi type đều implement ít nhất là zero method và như vậy là thỏa mãn điều kiện implement của empty interface. Đây chính là nguồn gốc của những phức tạp khi sử dụng interface. Ví dụ với function <code>doSomthing()</code> dưới đây. <script src="//gist.github.com/thanhngvpt/1e6dc031374ea543a70c90a9ad0f7f53.js"></script>
+argument v trong function <code>doSomething()</code> có type là <code>interface{}</code> chứ không phải any type như nhiều người lầm tưởng. Phân tích thêm chút phần này nào, flow sẽ là khi truyền 1 vào <code>doSomthing()</code> một argument go runtime sẽ thực hiện type conversion nếu cần thiết và convert value sang <code>interface{}</code> value. Mọi value đều chỉ có chính xác 1 type khi runtime và type của <code>v</code> sẽ là <code>interface{}</code>. Vậy dữ liệu thực tế được truyền vào <code>doSomthing()</code> là <code>interface{}</code> value à? Có gì đó sai sai nhỉ? Lại phân tích tiếp nào.</p>
+
+<p>Một interface value được kiến tạo vởi 2 phần data như sau:
+    - Một phần trỏ tới method table dành cho underlying type của interface value.
+    - Một phần trỏ tới data thực sự được lưu trữ bởi interface value.</p>
 
         </div>
 

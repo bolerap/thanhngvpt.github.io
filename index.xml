@@ -26,7 +26,12 @@
 
 &lt;p&gt;&lt;strong&gt;Empty interface&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Empty interface là &lt;code&gt;interface{}&lt;/code&gt;, empty interface không có method nào, vì trong go không có keyword implement nên mọi type đều implement ít nhất là zero method và như vậy là thỏa mãn điều kiện implement của empty interface. Nó chính là nguồn gốc của những phức tạp khi sử dụng interface. Ví dụ với function &lt;code&gt;doSomthing()&lt;/code&gt; dưới đây. &lt;script src=&#34;//gist.github.com/thanhngvpt/1e6dc031374ea543a70c90a9ad0f7f53.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;Empty interface là &lt;code&gt;interface{}&lt;/code&gt;, empty interface không có method nào, vì trong go không có keyword implement nên mọi type đều implement ít nhất là zero method và như vậy là thỏa mãn điều kiện implement của empty interface. Đây chính là nguồn gốc của những phức tạp khi sử dụng interface. Ví dụ với function &lt;code&gt;doSomthing()&lt;/code&gt; dưới đây. &lt;script src=&#34;//gist.github.com/thanhngvpt/1e6dc031374ea543a70c90a9ad0f7f53.js&#34;&gt;&lt;/script&gt;
+argument v trong function &lt;code&gt;doSomething()&lt;/code&gt; có type là &lt;code&gt;interface{}&lt;/code&gt; chứ không phải any type như nhiều người lầm tưởng. Phân tích thêm chút phần này nào, flow sẽ là khi truyền 1 vào &lt;code&gt;doSomthing()&lt;/code&gt; một argument go runtime sẽ thực hiện type conversion nếu cần thiết và convert value sang &lt;code&gt;interface{}&lt;/code&gt; value. Mọi value đều chỉ có chính xác 1 type khi runtime và type của &lt;code&gt;v&lt;/code&gt; sẽ là &lt;code&gt;interface{}&lt;/code&gt;. Vậy dữ liệu thực tế được truyền vào &lt;code&gt;doSomthing()&lt;/code&gt; là &lt;code&gt;interface{}&lt;/code&gt; value à? Có gì đó sai sai nhỉ? Lại phân tích tiếp nào.&lt;/p&gt;
+
+&lt;p&gt;Một interface value được kiến tạo vởi 2 phần data như sau:
+    - Một phần trỏ tới method table dành cho underlying type của interface value.
+    - Một phần trỏ tới data thực sự được lưu trữ bởi interface value.&lt;/p&gt;
 </description>
         </item>
       
