@@ -22,7 +22,7 @@
 
 &lt;p&gt;&lt;strong&gt;Implement an interface&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Trong go không có từ khóa &lt;code&gt;implement&lt;/code&gt; tường minh như một vài ngôn ngữ, và để implement một interface chỉ cần implement các method có trong interface.&lt;/p&gt;
+&lt;p&gt;Trong go không có từ khóa &lt;code&gt;implement&lt;/code&gt; tường minh như một vài ngôn ngữ, và để implement một interface chỉ cần implement một trong các method có trong interface.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Empty interface&lt;/strong&gt;&lt;/p&gt;
 
