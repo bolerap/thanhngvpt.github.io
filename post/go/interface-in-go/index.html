@@ -1,4 +1,4 @@
-<div class="list">
+<div class="single">
   <!DOCTYPE html>
 <html>
   <head>
@@ -16,14 +16,14 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://thanhngvpt.github.io//index.xml">
 
     
-    <title>Categories - Thanh&#39;s Notepad</title>
-    <meta property='og:title' content="Categories - Thanh&#39;s Notepad">
+    <title>Interface in go - Thanh&#39;s Notepad</title>
+    <meta property='og:title' content="Interface in go - Thanh&#39;s Notepad">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://thanhngvpt.github.io/categories/">
+    <meta property="og:url" content="https://thanhngvpt.github.io/post/go/interface-in-go/">
     
-    
+    <meta property="og:image" content="https://thanhngvpt.github.io/images/interface-in-go.png">
 
   </head>
 
@@ -39,36 +39,98 @@
     <div class="container site">
 
 
+
   <div class="row">
     <div class="col-sm-9">
 
-      <header class="title"><h1>Categories</h1></header>
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-      
-      <a href="/categories/algorithm/" class="category">algorithm</a>
-      
-      <a href="/categories/ecmascript/" class="category">ecmascript</a>
-      
-      <a href="/categories/editor/" class="category">editor</a>
-      
-      <a href="/categories/go/" class="category">go</a>
-      
-      <a href="/categories/http-server/" class="category">http-server</a>
-      
-      <a href="/categories/linux/" class="category">linux</a>
-      
-      <a href="/categories/python/" class="category">python</a>
-      
-      <a href="/categories/python-tricks/" class="category">python-tricks</a>
-      
-      <a href="/categories/window-manager/" class="category">window-manager</a>
-      
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://thanhngvpt.github.io/"/>
+        <meta itemprop="dateModified" content="2016-11-02T11:28:04&#43;07:00">
+        <meta itemprop="headline" content="Interface in go">
+        <meta itemprop="description" content="What is an interface?
+Interface là một tập các methods và cũng là một type. Nói theo cách của go thì interface là những actions mà type có thể execute thay vì những loại data mà type có thể hold như trong vài ngôn ngữ.
+Implement an interface
+Trong go không có từ khóa implement tường minh như một vài ngôn ngữ, và để implement một interface chỉ cần implement các method có trong interface.">
+        <meta itemprop="url" content="https://thanhngvpt.github.io/post/go/interface-in-go/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="https://thanhngvpt.github.io/images/interface-in-go.png" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
+        </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://thanhngvpt.github.io/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Thanh&#39;s Notepad">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="thanhngvpt">
+        </div>
 
+        <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/interface-in-go.png);"></div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-11-02T11:28:04&#43;07:00">Wed, Nov 2, 2016</time>
+          <h1 class="article-title">Interface in go</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p><strong>What is an interface?</strong></p>
+
+<p><em>Interface là một tập các methods và cũng là một type</em>. Nói theo cách của go thì interface là những actions mà type có thể execute thay vì những loại data mà type có thể hold như trong vài ngôn ngữ.</p>
+
+<p><strong>Implement an interface</strong></p>
+
+<p>Trong go không có từ khóa <code>implement</code> tường minh như một vài ngôn ngữ, và để implement một interface chỉ cần implement các method có trong interface.</p>
+
+<p><strong>Empty interface</strong></p>
+
+<p>Empty interface là <code>interface{}</code>, empty interface không có method nào, vì trong go không có keyword implement nên mọi type đều implement ít nhất là zero method và như vậy là thỏa mãn điều kiện implement của empty interface. Nó chính là nguồn gốc của những phức tạp khi sử dụng interface. Ví dụ với function <code>doSomthing()</code> dưới đây. <script src="//gist.github.com/thanhngvpt/1e6dc031374ea543a70c90a9ad0f7f53.js"></script></p>
+
+        </div>
+
+
+        <aside>
+          <div class="section"><a href="https://thanhngvpt.github.io/tags/go" class="tag">go</a> <a href="https://thanhngvpt.github.io/tags/interface" class="tag">interface</a> </div>
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fgo%2finterface-in-go%2f&t=Interface%20in%20go" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fgo%2finterface-in-go%2f&text=Interface%20in%20go&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fgo%2finterface-in-go%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fgo%2finterface-in-go%2f&title=Interface%20in%20go" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'thanhngvpt';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+          
+        </aside>
+
+      </article>
     </div>
 
     <div class="col-sm-3">
       <aside class="site">
 
+  
+  <div class="section">
+    <header><div class="title">TableOfContents</div></header>
+    <div class="list-default"></div>
+  </div>
   
 
   
@@ -221,6 +283,7 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
     </div>
 
   </div>
+
       </div>
 
     <footer class="site">

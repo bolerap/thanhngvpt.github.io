@@ -11,6 +11,28 @@
     
       
         <item>
+          <title>Interface in go</title>
+          <link>https://thanhngvpt.github.io/post/go/interface-in-go/</link>
+          <pubDate>Wed, 02 Nov 2016 11:28:04 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/go/interface-in-go/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;What is an interface?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Interface là một tập các methods và cũng là một type&lt;/em&gt;. Nói theo cách của go thì interface là những actions mà type có thể execute thay vì những loại data mà type có thể hold như trong vài ngôn ngữ.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Implement an interface&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Trong go không có từ khóa &lt;code&gt;implement&lt;/code&gt; tường minh như một vài ngôn ngữ, và để implement một interface chỉ cần implement các method có trong interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Empty interface&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Empty interface là &lt;code&gt;interface{}&lt;/code&gt;, empty interface không có method nào, vì trong go không có keyword implement nên mọi type đều implement ít nhất là zero method và như vậy là thỏa mãn điều kiện implement của empty interface. Nó chính là nguồn gốc của những phức tạp khi sử dụng interface. Ví dụ với function &lt;code&gt;doSomthing()&lt;/code&gt; dưới đây. &lt;script src=&#34;//gist.github.com/thanhngvpt/1e6dc031374ea543a70c90a9ad0f7f53.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Mode algorithm</title>
           <link>https://thanhngvpt.github.io/post/go/mode-algorithm/</link>
           <pubDate>Fri, 21 Oct 2016 14:15:20 ICT</pubDate>
