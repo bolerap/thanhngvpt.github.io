@@ -16,8 +16,9 @@
           <pubDate>Tue, 08 Nov 2016 10:41:31 ICT</pubDate>
           <author>thanhngvpt</author>
           <guid>https://thanhngvpt.github.io/post/linux/curl-usefuls/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;What is curl?&lt;/strong&gt;
-Curl là công cụ hỗ trợ transfer data qua một URL, đây là một util khá tiện dụng, được ứng dụng tương đối phổ biến hiện nay ví dụ dùng để test restful api, upload file lên ftp server &amp;hellip;&lt;/p&gt;
+          <description>&lt;p&gt;&lt;strong&gt;What is curl?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Curl là công cụ hỗ trợ transfer data qua một URL, đây là một util khá tiện dụng, được ứng dụng tương đối phổ biến hiện nay ví dụ dùng để test restful api, upload file lên ftp server &amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;GET&lt;/strong&gt;&lt;/p&gt;
 
