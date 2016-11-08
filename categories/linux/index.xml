@@ -11,6 +11,23 @@
     
       
         <item>
+          <title>Curl usefuls</title>
+          <link>https://thanhngvpt.github.io/post/linux/curl-usefuls/</link>
+          <pubDate>Tue, 08 Nov 2016 10:41:31 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/linux/curl-usefuls/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;What is curl?&lt;/strong&gt;
+Curl là công cụ hỗ trợ transfer data qua một URL, đây là một util khá tiện dụng, được ứng dụng tương đối phổ biến hiện nay ví dụ dùng để test restful api, upload file lên ftp server &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;GET&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;gist thanhngvpt f4b85fc08dcb40f505d524bcd8e1c92e&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Multiple monitor i3wm</title>
           <link>https://thanhngvpt.github.io/post/linux/multiple-monitor-i3wm/</link>
           <pubDate>Thu, 27 Oct 2016 15:42:47 ICT</pubDate>
