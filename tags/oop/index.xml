@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Thanh&#39;s Notepad </title>
-    <link>https://thanhngvpt.github.io/tags/python/index.xml</link>
+    <link>https://thanhngvpt.github.io/tags/oop/index.xml</link>
     <language>en-us</language>
     <author>thanhngvpt</author>
     <rights>(C) 2016</rights>
@@ -33,36 +33,6 @@
 
 &lt;li&gt;&lt;/li&gt;
 &lt;/ol&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Python tricks</title>
-          <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
-          <pubDate>Thu, 20 Oct 2016 14:57:11 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;Unpacking&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/4c11f8cb2d77547dc7d1344ffc720e2e.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Negative indexing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/e7af21b776415714e46104c0d35e70e5.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Slicing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/736739edb57a3deba50209e19706d96a.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Iterating&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/cf245eb17d152bd7dc0677902db2cfbe.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Zipping and unzipping&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/2ba6195c0cb95aad3ea58f9add05c66c.js&#34;&gt;&lt;/script&gt;
 </description>
         </item>
       

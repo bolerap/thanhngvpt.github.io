@@ -11,6 +11,34 @@
     
       
         <item>
+          <title>Object oriented programming in Python</title>
+          <link>https://thanhngvpt.github.io/post/python/oop/</link>
+          <pubDate>Wed, 09 Nov 2016 03:02:06 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/python/oop/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;OOP concepts&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;OOP có các concept như sau.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Class: Là prototype/blueprint của một object. Nó gồm một tập các attributes để mô tả cho object, và attributes = data members + methods = (class vars + instance vars) + methods.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Instance: Là một thực thể đơn được tạo từ một class, đã được cấp phát memory. Kiểu như 1 bản copy của class với attributes riêng biệt với từng instance riêng.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Object: Là chỉ một thực thể có attributes. Và hoàn toàn có thể nói một object là một instance của một class.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Class variables: Là các biến được định nghĩa bên trong một class và bên ngoài các method của class đó, &lt;em&gt;nó được chia sẻ cho tất cả các instance của class đó dùng&lt;/em&gt;. Class variables còn được biết đến với tên là static member variables như trong C++, Java, C#. Khi giá trị của class variables thay đổi thì ảnh hưởng tới tất cả các instance của class đó.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Instance variables: Là các biến chỉ có thể sử dụng bởi chính instance đó.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
           <title>Simple Python server</title>
           <link>https://thanhngvpt.github.io/post/python/simple-python-server/</link>
           <pubDate>Sat, 22 Oct 2016 09:07:38 ICT</pubDate>
