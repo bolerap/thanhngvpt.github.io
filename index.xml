@@ -6,8 +6,38 @@
     <language>en-us</language>
     <author>thanhngvpt</author>
     <rights>(C) 2016</rights>
-    <updated>2016-11-09 03:02:06 &#43;0700 ICT</updated>
+    <updated>2016-11-12 13:03:32 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Method and decorator in Python</title>
+          <link>https://thanhngvpt.github.io/post/python/method-and-decorator/</link>
+          <pubDate>Sat, 12 Nov 2016 13:03:32 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/python/method-and-decorator/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;What is decorators?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Một decorator đơn giản là một function nhận vào một function khác làm argument và thay thế function đó bằng một function đã modified.
+&lt;script src=&#34;//gist.github.com/thanhngvpt/e87181a5901bf0621a6d7f39cb941bf8.js&#34;&gt;&lt;/script&gt;
+Ví dụ này thực chất là decorator chẳng làm gì cả nó chỉ đơn giản là trả về function vừa nhận vào. Cùng xem xét một ví dụ phức tạp hơn.
+&lt;script src=&#34;//gist.github.com/thanhngvpt/d10d9df3b4b08327c9cae4584710d3df.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is methods?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Một method là một function được bound tới một instance của class, với first parameter được truyền implicit là một instance (self)
+&lt;script src=&#34;//gist.github.com/thanhngvpt/1b7c3d84dfd4b0242a9051dcacfb8627.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Static method&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Static method là một plain function được gọi thông qua class hoặc class instance&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Class method&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Class method là một function được bound tới class, với first parameter được truyền implicit là class object đó (cls)&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>
