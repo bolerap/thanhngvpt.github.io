@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thanh&#39;s Notepad </title>
+    <link>https://thanhngvpt.github.io/categories/translate/index.xml</link>
+    <language>en-us</language>
+    <author>thanhngvpt</author>
+    <rights>(C) 2016</rights>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Haskell first step</title>
+          <link>https://thanhngvpt.github.io/post/haskell/translate/hfm/1_first_step/</link>
+          <pubDate>Thu, 17 Nov 2016 19:29:06 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/haskell/translate/hfm/1_first_step/</guid>
+          <description>&lt;p&gt;Values, functions, types là những thành phần cơ bản của một chương trình haskell. Trước khi đi vào viết chương trình haskell chúng ta cùng xem xét các thành phần này.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Values&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Values là các giá trị như &lt;code&gt;5&lt;/code&gt; là một số nguyên, &lt;code&gt;hello&lt;/code&gt; là một chuỗi kí tự &amp;hellip; values được xử lý bởi các funtions ví dụ function &lt;code&gt;+&lt;/code&gt; nhận vào hai số và tạo ra một số mới, nói cách khác function là mapping các input values thành output values.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Types&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Một nhóm các values có cùng thuộc tính gọi là một type. Trong haskell có các primitive type như sau: Int, Bool, Float, Double, String, Char.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Functions&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Một function bao gồm hai thành phần: head (gồm tên hàm và danh sách các tham số) + body (code thực thi của hàm).
+&lt;script src=&#34;//gist.github.com/thanhngvpt/f89a64aa15161f02a7b277e8e334fae9.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>
