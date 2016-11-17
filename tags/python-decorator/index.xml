@@ -20,8 +20,9 @@
 
 &lt;p&gt;Một decorator đơn giản là một function nhận vào một function khác làm argument và thay thế function đó bằng một function đã modified.
 &lt;script src=&#34;//gist.github.com/thanhngvpt/e87181a5901bf0621a6d7f39cb941bf8.js&#34;&gt;&lt;/script&gt;
-Ví dụ này thực chất là decorator chẳng làm gì cả nó chỉ đơn giản là trả về function vừa nhận vào. Cùng xem xét một ví dụ phức tạp hơn.
-&lt;script src=&#34;//gist.github.com/thanhngvpt/d10d9df3b4b08327c9cae4584710d3df.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+Ví dụ này thực chất là decorator chẳng làm gì cả nó chỉ đơn giản là trả về function vừa nhận vào. Cùng xem xét một ví dụ phức tạp hơn.&lt;/p&gt;
+
+&lt;script src=&#34;//gist.github.com/thanhngvpt/d10d9df3b4b08327c9cae4584710d3df.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;&lt;strong&gt;What is methods?&lt;/strong&gt;&lt;/p&gt;
 
