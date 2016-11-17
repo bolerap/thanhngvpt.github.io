@@ -30,6 +30,15 @@
 
 &lt;p&gt;Một function bao gồm hai thành phần: head (gồm tên hàm và danh sách các tham số) + body (code thực thi của hàm).
 &lt;script src=&#34;//gist.github.com/thanhngvpt/f89a64aa15161f02a7b277e8e334fae9.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Type signatures&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Type signatures là một phần tùy chọn nhưng được khuyến khích sử dụng.
+&lt;script src=&#34;//gist.github.com/thanhngvpt/2dde8d7b95af5e0ee8bef304ecb7aacd.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Multiple arguments&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Function nhận vào nhiều tham số đều là curried function vì mặc định function trong haskell chỉ nhận vào một tham số, function có thể nhận vào một function và trả về một function.&lt;/p&gt;
 </description>
         </item>
       
