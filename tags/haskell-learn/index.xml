@@ -30,6 +30,15 @@ Module bắt đầu với một header là một comment chứa các thông tin,
 
 &lt;p&gt;Cho tới nay các ví dụ của chúng ta đều thực hiện mà không bị ràng buộc bởi điều kiện (conditional), phần nay chúng ta sẽ tìm hiểu về điều kiện trong haskell. Cùng xem xét ví dụ sau về sử dụng conditional trong haskell.
 &lt;script src=&#34;//gist.github.com/thanhngvpt/70c93748bd09994625e59ab264485eff.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Binder&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Một binder sẽ bind value tới một name, và sau đó ta có thể truy cập value thông qua name.
+&lt;script src=&#34;//gist.github.com/thanhngvpt/7f93e3621a2866445c5b9133fe32e339.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tuple combinding different data items&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cho tới nay chúng ta mới chỉ biết cách truyền nhiều tham số vào function nhưng chưa biết cách tạo function trả về nhiều value. Chúng ta có thể thực hiện điều này bằng cách sử dụng tuple.&lt;/p&gt;
 </description>
         </item>
       
