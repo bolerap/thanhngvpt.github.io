@@ -6,8 +6,33 @@
     <language>en-us</language>
     <author>thanhngvpt</author>
     <rights>(C) 2016</rights>
-    <updated>2016-11-12 13:03:32 &#43;0700 ICT</updated>
+    <updated>2016-11-20 08:37:59 &#43;0700 ICT</updated>
 
+    
+      
+        <item>
+          <title>Fundamentals</title>
+          <link>https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/</link>
+          <pubDate>Sun, 20 Nov 2016 08:37:59 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/</guid>
+          <description>&lt;p&gt;Các function chúng ta định nghĩa cho tới nay bị giới hạn trong ở những thao tác cơ bản như cách gia tăng một số, Trong chương này chúng ta sẽ thảo luận về một số chức năng nâng cao và xem xét về các thao tác trên list.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Program are composed from modules&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Thông thường một chương trình bao gồm nhiều function và định nghĩa kiểu (type definition). Rõ ràng đặt chúng trong một file là 1 ý tưởng tồi tệ. Bởi vậy các ngôn ngữ lập trình hiện đại cung cấp vài công cụ để cấu trúc chương trình bằng cách cho phép nhóm các related definition vào một logic unit được lưu trữ trong 1 file riêng. Trong haskell những unit này gọi là module.&lt;/p&gt;
+
+&lt;p&gt;Ví dụ về định nghĩa một module trong haskell.
+&lt;script src=&#34;//gist.github.com/thanhngvpt/75c8695b03afea2a2961a431b2e602cd.js&#34;&gt;&lt;/script&gt;
+Module bắt đầu với một header là một comment chứa các thông tin, tác giả, ngày tạo, mô tả ngắn gọn về chức năng của module. Dòng đầu tiên bắt đầu bởi keyword module theo sau là tên của module, dòng tiếp là keyword where và các definition thuộc về module. Lưu ý là tên module trái ngược với tên function và tên biến là phải bắt đầu bằng kí tự hoa. Trong haskell có một module đặc biệt tên là Prelude mà nội dung luôn sẵn có (available). &lt;code&gt;Prelude&lt;/code&gt; chứa tất cả các function được định nghĩa trước trong haskell như &lt;code&gt;+&lt;/code&gt; &lt;code&gt;*&lt;/code&gt; &amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Branches in the control flow&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Cho tới nay các ví dụ của chúng ta đều thực hiện mà không bị ràng buộc bởi điều kiện (conditional), phần nay chúng ta sẽ tìm hiểu về điều kiện trong haskell. Cùng xem xét ví dụ sau về sử dụng conditional trong haskell.
+&lt;script src=&#34;//gist.github.com/thanhngvpt/70c93748bd09994625e59ab264485eff.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+        </item>
+      
     
       
         <item>

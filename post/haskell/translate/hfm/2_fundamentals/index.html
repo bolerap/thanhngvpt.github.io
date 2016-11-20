@@ -1,4 +1,4 @@
-<div class="list">
+<div class="single">
   <!DOCTYPE html>
 <html>
   <head>
@@ -16,12 +16,12 @@
     <link rel="alternate" type="application/rss+xml" title="RSS" href="https://thanhngvpt.github.io//index.xml">
 
     
-    <title>Http Server - Thanh&#39;s Notepad</title>
-    <meta property='og:title' content="Http Server - Thanh&#39;s Notepad">
+    <title>Fundamentals - Thanh&#39;s Notepad</title>
+    <meta property='og:title' content="Fundamentals - Thanh&#39;s Notepad">
     <meta property="og:type" content="article">
     
 
-    <meta property="og:url" content="https://thanhngvpt.github.io/tags/http-server/">
+    <meta property="og:url" content="https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/">
     
     
 
@@ -39,41 +39,100 @@
     <div class="container site">
 
 
+
   <div class="row">
     <div class="col-sm-9">
 
-      <header class="title"><h1>Http Server</h1></header>
+      <article class="single" itemscope="itemscope" itemtype="http://schema.org/Article">
 
-      <div class="articles">
-        <div class="row">
-          
-          <div class="col-sm-4">
-            <article class="li">
-  <a href="https://thanhngvpt.github.io/post/python/simple-python-server/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/simple-python-server.gif);"></div>
-    <div class="detail">
-      <time>Sat, Oct 22, 2016</time>
-      <h2 class="title">Simple Python server</h2>
-      <div class="summary">Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.
- a server is a computer program or a device that provides functionality for other programs or devices
- Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.</div>
-    </div>
-  </a>
-</article>
-
-          </div>
-          
+        <meta itemprop="mainEntityOfPage"  itemType="https://schema.org/WebPage" content="https://thanhngvpt.github.io/"/>
+        <meta itemprop="dateModified" content="2016-11-20T08:37:59&#43;07:00">
+        <meta itemprop="headline" content="Fundamentals">
+        <meta itemprop="description" content="Các function chúng ta định nghĩa cho tới nay bị giới hạn trong ở những thao tác cơ bản như cách gia tăng một số, Trong chương này chúng ta sẽ thảo luận về một số chức năng nâng cao và xem xét về các thao tác trên list.
+Program are composed from modules
+Thông thường một chương trình bao gồm nhiều function và định nghĩa kiểu (type definition). Rõ ràng đặt chúng trong một file là 1 ý tưởng tồi tệ.">
+        <meta itemprop="url" content="https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/">
+        <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <meta itemprop="url" content="https://thanhngvpt.github.io/images/default.jpg" />
+          <meta itemprop="width" content="800">
+          <meta itemprop="height" content="800">
         </div>
-      </div>
+        <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+          <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+            <meta itemprop="url" content="https://thanhngvpt.github.io/images/logo.jpg">
+            <meta itemprop="width" content="100">
+            <meta itemprop="height" content="100">
+          </div>
+          <meta itemprop="name" content="Thanh&#39;s Notepad">
+        </div>
+        <div itemprop="author" itemscope itemtype="https://schema.org/Person">
+          <meta itemprop="name" content="thanhngvpt">
+        </div>
 
-      
+        <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+
+        <header class="article-header">
+          <time itemprop="datePublished" pubdate="pubdate" datetime="2016-11-20T08:37:59&#43;07:00">Sun, Nov 20, 2016</time>
+          <h1 class="article-title">Fundamentals</h1>
+        </header>
+
+        <div class="article-body" itemprop="articleBody">
+          <p>Các function chúng ta định nghĩa cho tới nay bị giới hạn trong ở những thao tác cơ bản như cách gia tăng một số, Trong chương này chúng ta sẽ thảo luận về một số chức năng nâng cao và xem xét về các thao tác trên list.</p>
+
+<p><strong>Program are composed from modules</strong></p>
+
+<p>Thông thường một chương trình bao gồm nhiều function và định nghĩa kiểu (type definition). Rõ ràng đặt chúng trong một file là 1 ý tưởng tồi tệ. Bởi vậy các ngôn ngữ lập trình hiện đại cung cấp vài công cụ để cấu trúc chương trình bằng cách cho phép nhóm các related definition vào một logic unit được lưu trữ trong 1 file riêng. Trong haskell những unit này gọi là module.</p>
+
+<p>Ví dụ về định nghĩa một module trong haskell.
+<script src="//gist.github.com/thanhngvpt/75c8695b03afea2a2961a431b2e602cd.js"></script>
+Module bắt đầu với một header là một comment chứa các thông tin, tác giả, ngày tạo, mô tả ngắn gọn về chức năng của module. Dòng đầu tiên bắt đầu bởi keyword module theo sau là tên của module, dòng tiếp là keyword where và các definition thuộc về module. Lưu ý là tên module trái ngược với tên function và tên biến là phải bắt đầu bằng kí tự hoa. Trong haskell có một module đặc biệt tên là Prelude mà nội dung luôn sẵn có (available). <code>Prelude</code> chứa tất cả các function được định nghĩa trước trong haskell như <code>+</code> <code>*</code> &hellip;</p>
+
+<p><strong>Branches in the control flow</strong></p>
+
+<p>Cho tới nay các ví dụ của chúng ta đều thực hiện mà không bị ràng buộc bởi điều kiện (conditional), phần nay chúng ta sẽ tìm hiểu về điều kiện trong haskell. Cùng xem xét ví dụ sau về sử dụng conditional trong haskell.
+<script src="//gist.github.com/thanhngvpt/70c93748bd09994625e59ab264485eff.js"></script></p>
+
+        </div>
 
 
+        <aside>
+          
+
+          <div class="section share">
+            <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fhaskell%2ftranslate%2fhfm%2f2_fundamentals%2f&t=Fundamentals" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+            <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fhaskell%2ftranslate%2fhfm%2f2_fundamentals%2f&text=Fundamentals&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+            <a href="https://plus.google.com/share?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fhaskell%2ftranslate%2fhfm%2f2_fundamentals%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+            <a href="http://getpocket.com/edit?url=https%3a%2f%2fthanhngvpt.github.io%2fpost%2fhaskell%2ftranslate%2fhfm%2f2_fundamentals%2f&title=Fundamentals" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+          </div>
+
+          
+          
+          <div id="disqus_thread"></div>
+          <script type="text/javascript">
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'thanhngvpt';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          
+          
+        </aside>
+
+      </article>
     </div>
 
     <div class="col-sm-3">
       <aside class="site">
 
+  
+  <div class="section">
+    <header><div class="title">TableOfContents</div></header>
+    <div class="list-default"></div>
+  </div>
   
 
   
@@ -261,6 +320,7 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
     </div>
 
   </div>
+
       </div>
 
     <footer class="site">
