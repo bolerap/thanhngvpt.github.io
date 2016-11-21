@@ -84,20 +84,6 @@ Trong go không có từ khóa implement tường minh như một vài ngôn ng�
     <div class="content">
       
       <div class="sm"><article class="li">
-  <a href="https://thanhngvpt.github.io/post/go/translate/slice-machanic-of-append/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
-    <div class="detail">
-      <time>Sun, Nov 20, 2016</time>
-      <h2 class="title">Array, slice, string - mechanic of append</h2>
-      <div class="summary">Introduction
-Một trong những tính năng phổ biến của các ngôn ngữ lập trình thủ tục là khái niệm array. Array có vẻ như là điều đơn giản nhưng có khá nhiều câu hỏi cần được trả lời khi thêm chúng vào một ngôn ngữ như:
-- fixed size or variable size? - is the size part of the type? - what do multidimensional arrays look like? - does the empty array have meaning?</div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
   <a href="https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/" class="clearfix">
     <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/haskell.jpg);"></div>
     <div class="detail">
@@ -227,6 +213,19 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
       <div class="summary">Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.
  a server is a computer program or a device that provides functionality for other programs or devices
  Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.</div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/post/go/mode-algorithm/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/algorithm.jpg);"></div>
+    <div class="detail">
+      <time>Fri, Oct 21, 2016</time>
+      <h2 class="title">Mode algorithm</h2>
+      <div class="summary">Mode algorithm là thuật toán được sử dụng để tìm ra phần tử lặp lại nhiều nhất trong một array. Source dưới đây cài đặt cho thuật toán tìm mode của 1 array sử dụng ngôn ngữ Go.
+// sử dụng slice function sliceMode(input []int) int { count := make([]input, len(input)) maxValue := 0 maxKey := 0 for i := range input { count[input[i]]++ if count[input[i]] &gt; maxValue { maxValue = count[input[i]] maxKey = input[i] } } return maxKey } // sử dụng map function mapMode([]input) int { count := make(map[int]int) maxValue, maxKey := 0, 0 for i := range input { count[input[i]]++ if count[input[i]] &gt; maxValue { maxValue = count[input[i]] maxKey = input[i] } } return maxKey }  </div>
     </div>
   </a>
 </article>
