@@ -11,7 +11,7 @@
     
       
         <item>
-          <title>Introduction</title>
+          <title>Machine learning Introduction</title>
           <link>https://thanhngvpt.github.io/post/ai/ml/introduction/</link>
           <pubDate>Wed, 23 Nov 2016 14:18:30 ICT</pubDate>
           <author>thanhngvpt</author>
@@ -20,7 +20,7 @@
 
 &lt;p&gt;Machine learning là một nhánh của khoa học về các chương trình máy tính có thể tự học và tự cải thiện kinh nghiệm. Việc học ở đây có nghĩa là nhận biết và hiểu về dữ liệu đầu vào và đưa ra quyết định dựa trên những dữ liệu được cung cấp.&lt;/p&gt;
 
-&lt;p&gt;Rất khó khăn để cung cấp tất cả những quyết định dựa trên tất cả những đầu vào có thể, Để ngăn chặn vấn đề này, các giải thuật được phát triển. Những giải thuất này xây dựng tri thức từ dữ liệu cụ thể và kinh nghiệm trong trước đó theo nguyên tắc của lý thuyết xác suất thống kê, logic, tối ưu hóa tổ hợp, tìm kiếm, học tăng cường và lý thuyết điều khiển.&lt;/p&gt;
+&lt;p&gt;Rất khó khăn để cung cấp tất cả những quyết định dựa trên tất cả những đầu vào có thể. Để ngăn chặn vấn đề này, các giải thuật được phát triển. Những giải thuật này xây dựng tri thức từ dữ liệu cụ thể và kinh nghiệm trước đó theo nguyên tắc của lý thuyết xác suất thống kê, logic, tối ưu hóa tổ hợp, tìm kiếm, học tăng cường và lý thuyết điều khiển.&lt;/p&gt;
 
 &lt;p&gt;Các giải thuật đã được phát triển thành cở sở của các ứng dụng như:&lt;/p&gt;
 
