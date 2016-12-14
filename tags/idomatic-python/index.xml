@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Idomatic Python on David&#39;s Notepad</title>
+    <title>David&#39;s Notepad </title>
     <link>https://thanhngvpt.github.io/tags/idomatic-python/index.xml</link>
-    <description>Recent content in Idomatic Python on David&#39;s Notepad</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://thanhngvpt.github.io/tags/idomatic-python/index.xml" rel="self" type="application/rss+xml" />
+    <author>thanhngvpt</author>
+    <rights>(C) 2016</rights>
+    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
+
     
-    <item>
-      <title>Python tricks</title>
-      <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
-      <pubDate>Thu, 20 Oct 2016 14:57:11 +0700</pubDate>
       
-      <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Unpacking&lt;/strong&gt;&lt;/p&gt;
+        <item>
+          <title>Python tricks</title>
+          <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
+          <pubDate>Thu, 20 Oct 2016 14:57:11 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Unpacking&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#1
 a, b, c = 1, 2, 3
@@ -34,7 +36,9 @@ print(a, b) # 2 1
 #5
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-    </item>
+        </item>
+      
     
+
   </channel>
 </rss>

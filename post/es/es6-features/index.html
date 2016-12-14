@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="Hugo 0.17-DEV" />
+    <meta name="generator" content="Hugo 0.18-DEV" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Open+Sans|Marcellus+SC'>
@@ -123,46 +123,6 @@
     <div class="content">
       
       <div class="sm"><article class="li">
-  <a href="https://thanhngvpt.github.io/post/tools/vim-usefuls/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
-    <div class="detail">
-      <time>Sun, Oct 23, 2016</time>
-      <h2 class="title">Vim usefuls</h2>
-      <div class="summary">Vim là 1 trình soạn thảo văn bản nhỏ gọn nhưng cực kì khỏe, nếu được cài đầy đủ plugin nó hoàn toàn có thể sánh ngang các IDE hầm hố. Vim được khá nhiều dev lão luyện dùng điều này cho thấy nó khá tốt và cần đưa vào diện tình nghi ngay nếu chưa biết gì về nó.
-Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết các yêu cầu của các dev, để cài đặt plugin cho vim ta có thể sử dụng nhiều cách, tuy nhiên cách được sử dụng phổ biến và được khuyến khích là sử dụng một plugin manager, plugin manager lại có vài cái tên để lựa chọn như vundle, neobundle, pathogen &hellip; trong số này thì vundle là cái được khuyến khích.</div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="https://thanhngvpt.github.io/post/python/simple-python-server/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
-    <div class="detail">
-      <time>Sat, Oct 22, 2016</time>
-      <h2 class="title">Simple Python server</h2>
-      <div class="summary">Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.
- a server is a computer program or a device that provides functionality for other programs or devices
- Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.</div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
-  <a href="https://thanhngvpt.github.io/post/go/mode-algorithm/" class="clearfix">
-    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
-    <div class="detail">
-      <time>Fri, Oct 21, 2016</time>
-      <h2 class="title">Mode algorithm</h2>
-      <div class="summary">Mode algorithm là thuật toán được sử dụng để tìm ra phần tử lặp lại nhiều nhất trong một array. Source dưới đây cài đặt cho thuật toán tìm mode của 1 array sử dụng ngôn ngữ Go.
-// sử dụng slice function sliceMode(input []int) int { count := make([]input, len(input)) maxValue := 0 maxKey := 0 for i := range input { count[input[i]]++ if count[input[i]] &gt; maxValue { maxValue = count[input[i]] maxKey = input[i] } } return maxKey } // sử dụng map function mapMode([]input) int { count := make(map[int]int) maxValue, maxKey := 0, 0 for i := range input { count[input[i]]++ if count[input[i]] &gt; maxValue { maxValue = count[input[i]] maxKey = input[i] } } return maxKey }  </div>
-    </div>
-  </a>
-</article>
-</div>
-      
-      <div class="sm"><article class="li">
   <a href="https://thanhngvpt.github.io/post/react/create-class-vs-component/" class="clearfix">
     <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
     <div class="detail">
@@ -183,7 +143,7 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
       <time>Thu, Oct 20, 2016</time>
       <h2 class="title">Python tricks</h2>
       <div class="summary">Unpacking
-#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple # #2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) # #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 # #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5 extended unpacking (python 3 only) a, b, *c = [1, 2, 3, 4, 5, 6] print(c) # [3, 4, 5, 6]  Negative indexing</div>
+#1 a, b, c = 1, 2, 3 d = a, b, c print(d, type(d)) # (1, 2, 3) - tuple #2 a, b, c = (2 * i + 1 for i in range(3)) d = a, b, c print(d) # (1, 3, 5) #3 a, (b, c), d = [1, (2, 3), 5] print(a, b, c, d) # 1 2 3 5 #4 - swapping variables a, b = 1, 2 a, b = b, a print(a, b) # 2 1 #5  </div>
     </div>
   </a>
 </article>
@@ -201,6 +161,90 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
 </article>
 </div>
       
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/categories/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+    <div class="detail">
+      <time>Mon, Jan 1, 0001</time>
+      <h2 class="title">Categories</h2>
+      <div class="summary"></div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+    <div class="detail">
+      <time>Thu, Oct 20, 2016</time>
+      <h2 class="title">David&#39;s Notepad</h2>
+      <div class="summary"></div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/categories/ecmascript/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+    <div class="detail">
+      <time>Thu, Oct 20, 2016</time>
+      <h2 class="title">Ecmascript</h2>
+      <div class="summary"></div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/tags/idomatic-python/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+    <div class="detail">
+      <time>Thu, Oct 20, 2016</time>
+      <h2 class="title">Idomatic Python</h2>
+      <div class="summary"></div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/post/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+    <div class="detail">
+      <time>Thu, Oct 20, 2016</time>
+      <h2 class="title">Posts</h2>
+      <div class="summary"></div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/tags/python/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+    <div class="detail">
+      <time>Thu, Oct 20, 2016</time>
+      <h2 class="title">Python</h2>
+      <div class="summary"></div>
+    </div>
+  </a>
+</article>
+</div>
+      
+      <div class="sm"><article class="li">
+  <a href="https://thanhngvpt.github.io/categories/python/" class="clearfix">
+    <div class="image" style="background-image: url(https://thanhngvpt.github.io/images/default.jpg);"></div>
+    <div class="detail">
+      <time>Thu, Oct 20, 2016</time>
+      <h2 class="title">Python</h2>
+      <div class="summary"></div>
+    </div>
+  </a>
+</article>
+</div>
+      
     </div>
   </div>
 
@@ -208,7 +252,7 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
   <div class="section taxonomies">
     <header><div class="title">category</div></header>
     <div class="content">
-      <a href="https://thanhngvpt.github.io/categories/python">python</a><a href="https://thanhngvpt.github.io/categories/algorithm">algorithm</a><a href="https://thanhngvpt.github.io/categories/ecmascript">ecmascript</a><a href="https://thanhngvpt.github.io/categories/editor">editor</a><a href="https://thanhngvpt.github.io/categories/go">go</a><a href="https://thanhngvpt.github.io/categories/http-server">http-server</a><a href="https://thanhngvpt.github.io/categories/python-tricks">python-tricks</a>
+      <a href="https://thanhngvpt.github.io/categories/ecmascript">ecmascript</a><a href="https://thanhngvpt.github.io/categories/python">python</a>
     </div>
   </div>
   
@@ -222,7 +266,7 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
   <div class="section taxonomies">
     <header><div class="title">tag</div></header>
     <div class="content">
-      <a href="https://thanhngvpt.github.io/tags/algorithm">algorithm</a><a href="https://thanhngvpt.github.io/tags/editor">editor</a><a href="https://thanhngvpt.github.io/tags/http-server">http-server</a><a href="https://thanhngvpt.github.io/tags/idomatic-python">idomatic-python</a><a href="https://thanhngvpt.github.io/tags/mode-algorithm">mode-algorithm</a><a href="https://thanhngvpt.github.io/tags/python">python</a><a href="https://thanhngvpt.github.io/tags/react">react</a><a href="https://thanhngvpt.github.io/tags/react-component">react-component</a><a href="https://thanhngvpt.github.io/tags/reactjs">reactjs</a><a href="https://thanhngvpt.github.io/tags/sharing-files-in-lan">sharing-files-in-lan</a>
+      <a href="https://thanhngvpt.github.io/tags/idomatic-python">idomatic-python</a><a href="https://thanhngvpt.github.io/tags/python">python</a><a href="https://thanhngvpt.github.io/tags/react">react</a><a href="https://thanhngvpt.github.io/tags/react-component">react-component</a><a href="https://thanhngvpt.github.io/tags/reactjs">reactjs</a>
     </div>
   </div>
   
@@ -236,7 +280,7 @@ Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết c
       </div>
 
     <footer class="site">
-      <p>&copy; 2016 thanhngvpt</p>
+      <p>&copy; 2016 David&#39;s Notepad</p>
       <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
     </footer>
 

@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>David&#39;s Notepad</title>
+    <title>David&#39;s Notepad </title>
     <link>https://thanhngvpt.github.io/index.xml</link>
-    <description>Recent content on David&#39;s Notepad</description>
-    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Oct 2016 15:55:47 +0700</lastBuildDate>
-    <atom:link href="https://thanhngvpt.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <author>thanhngvpt</author>
+    <rights>(C) 2016</rights>
+    <updated>2016-10-20 15:55:47 &#43;0700 ICT</updated>
+
     
-    <item>
-      <title>createClass vs Component in React</title>
-      <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
-      <pubDate>Thu, 20 Oct 2016 15:55:47 +0700</pubDate>
       
-      <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
-      <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
+        <item>
+          <title>createClass vs Component in React</title>
+          <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
+          <pubDate>Thu, 20 Oct 2016 15:55:47 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
+          <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;// cách 1
 const = react.createClass({
@@ -81,15 +82,17 @@ Comment.defaultProps = {};
 &lt;li&gt;mixin: cách 1 hỗ trợ, cách 2 không hỗ trợ&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Python tricks</title>
-      <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
-      <pubDate>Thu, 20 Oct 2016 14:57:11 +0700</pubDate>
+        </item>
       
-      <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Unpacking&lt;/strong&gt;&lt;/p&gt;
+    
+      
+        <item>
+          <title>Python tricks</title>
+          <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
+          <pubDate>Thu, 20 Oct 2016 14:57:11 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Unpacking&lt;/strong&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;#1
 a, b, c = 1, 2, 3
@@ -109,17 +112,21 @@ print(a, b) # 2 1
 #5
 &lt;/code&gt;&lt;/pre&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>ES6 features</title>
-      <link>https://thanhngvpt.github.io/post/es/es6-features/</link>
-      <pubDate>Thu, 20 Oct 2016 14:38:05 +0700</pubDate>
+        </item>
       
-      <guid>https://thanhngvpt.github.io/post/es/es6-features/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi dignissimos perspiciatis magnam provident molestias voluptatem enim, blanditiis voluptate voluptas. Atque, natus? Id assumenda, corporis recusandae perferendis, quidem at tempora!&lt;/p&gt;
-</description>
-    </item>
     
+      
+        <item>
+          <title>ES6 features</title>
+          <link>https://thanhngvpt.github.io/post/es/es6-features/</link>
+          <pubDate>Thu, 20 Oct 2016 14:38:05 ICT</pubDate>
+          <author>thanhngvpt</author>
+          <guid>https://thanhngvpt.github.io/post/es/es6-features/</guid>
+          <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi dignissimos perspiciatis magnam provident molestias voluptatem enim, blanditiis voluptate voluptas. Atque, natus? Id assumenda, corporis recusandae perferendis, quidem at tempora!&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
   </channel>
 </rss>
