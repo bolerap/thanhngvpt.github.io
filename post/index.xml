@@ -1,504 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thanh&#39;s Notepad </title>
+    <title>Posts on David&#39;s Notepad</title>
     <link>https://thanhngvpt.github.io/post/index.xml</link>
+    <description>Recent content in Posts on David&#39;s Notepad</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>thanhngvpt</author>
-    <rights>(C) 2016</rights>
-    <updated>2016-11-23 14:18:30 &#43;0700 ICT</updated>
-
+    <lastBuildDate>Mon, 12 Dec 2016 11:26:54 +0700</lastBuildDate>
+    <atom:link href="https://thanhngvpt.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>Channels in golang</title>
+      <link>https://thanhngvpt.github.io/post/go/channels/</link>
+      <pubDate>Mon, 12 Dec 2016 11:26:54 +0700</pubDate>
       
-        <item>
-          <title>Machine learning Introduction</title>
-          <link>https://thanhngvpt.github.io/post/ai/ml/introduction/</link>
-          <pubDate>Wed, 23 Nov 2016 14:18:30 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/ai/ml/introduction/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;What is machine learning?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Machine learning là một nhánh của khoa học về các chương trình máy tính có thể tự học và tự cải thiện kinh nghiệm. Việc học ở đây có nghĩa là nhận biết và hiểu về dữ liệu đầu vào và đưa ra quyết định dựa trên những dữ liệu được cung cấp.&lt;/p&gt;
-
-&lt;p&gt;Rất khó khăn để cung cấp tất cả những quyết định dựa trên tất cả những đầu vào có thể. Để ngăn chặn vấn đề này, các giải thuật được phát triển. Những giải thuật này xây dựng tri thức từ dữ liệu cụ thể và kinh nghiệm trước đó theo nguyên tắc của lý thuyết xác suất thống kê, logic, tối ưu hóa tổ hợp, tìm kiếm, học tăng cường và lý thuyết điều khiển.&lt;/p&gt;
-
-&lt;p&gt;Các giải thuật đã được phát triển thành cở sở của các ứng dụng như:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Vision processing (Xử lý thị giác).&lt;/li&gt;
-&lt;li&gt;Language processing (Xử lý ngôn ngữ).&lt;/li&gt;
-&lt;li&gt;Forecasting (Tiên đoán, dự đoán).&lt;/li&gt;
-&lt;li&gt;Pattern recognition (Nhận dạng mẫu).&lt;/li&gt;
-&lt;li&gt;Game.&lt;/li&gt;
-&lt;li&gt;Data mining (Khai phá dữ liệu).&lt;/li&gt;
-&lt;li&gt;Expert system.&lt;/li&gt;
-&lt;li&gt;Robotics.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Machine learning là một lĩnh vực rộng lớn và nó vượt quá phạm vi của bài viết này. Có vài cách để thực hiện (implement) các kĩ thuật machine learning, tuy nhiên có hai cách phổ biến là học có giám sát (supervised learning) và học không có giám sát (unsupervised learning).&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Supervised learning&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Học có giám sát là việc học một chức năng từ dữ liệu huấn luyện cho sẵn. Một giải thuật học có giám sát phân tích dữ liệu huấn luyện và tạo ra một chức năng đã được suy luận (inferred function). Các ví dụ phổ biến của học có giám sát bao gồm:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Classifying emails as spam (Phân loại email spam).&lt;/li&gt;
-&lt;li&gt;Labeling webpages based on their content (Gán nhãn các trang web dựa trên nội dung của chúng).&lt;/li&gt;
-&lt;li&gt;voice recogition (Nhận dạng giọng nói).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Có nhiều giải thuật học có giám sát như neural network, support vector machines (SVMs) and Naive Bayes classifiers.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Unsupervised learning&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Học không giám sát tạo tiên đoán cho các dữ liệu chưa được gán nhãn mà không có bất kì dữ liệu định nghĩa trước nào để huấn luyện. Học không giám sát là một công cụ cực kì mạnh mẽ cho việc phân tích dữ liệu sẵn có, tìm kiếm các mẫu và xu hướng. Nó thường được sử dụng cho việc nhóm các đầu vào giống nhau thành vào một nhóm logic. Các giải pháp phổ biến cho học không giám sát bao gồm:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;K-means.&lt;/li&gt;
-&lt;li&gt;Self-organizing maps.&lt;/li&gt;
-&lt;li&gt;Hierarchical clustering.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Recommendation&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Đề xuất (recommendation) là một kĩ thuật phổ biến cung cấp các đề xuất tương tự dựa trên thông tin người dùng như click, xếp hạng. Ví dụ amazon dùng kĩ thuật này để hiển thị danh sách sản phẩm &amp;ldquo;có thể bạn quan tâm&amp;rdquo;, facebook sử dụng cho tính năng hiển thị danh sách &amp;ldquo;những người có thể bạn biết&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Classification&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Phân loại (classification) hay còn được biết đến với tên categorization là một kĩ thuật machine learning sử dụng dữ liệu đã biết để xác định cách dữ liệu mới được phân loại vào một tập của các danh mục (categories) đã có. Phân loại là một dạng của học có giám sát.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Các nhà cung cấp dịch vụ thư điện tự như Yahoo, Gmail sử dụng kĩ thuật này để quyết định một email mới được phân loại là spam hay không? Giải thuật phân loại huấn luận chính nó bằng cách sử dụng các thói quen người dùng khi đánh dấu một email là spam. Theo đó trình phân loại quyềt định một email trong tương lai là spam hay không?&lt;/li&gt;
-&lt;li&gt;Itunes sử dụng phân loại để chuẩn bị các danh sách phát.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Clustering&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Xếp nhóm (clustering) được sử dụng để tạo các nhóm dữ liệu giống nhau dựa trên các đặc điểm chung. Xếp nhóm là một dạng của học không giám sát.&lt;/p&gt;
-
-&lt;p&gt;Clustering engine đi qua toàn bộ dữ liệu đầu vào và dựa trên các đặc điểm của dữ liệu nó sẽ quyết định cluster nào sẽ được nhóm lại.&lt;/p&gt;
+      <guid>https://thanhngvpt.github.io/post/go/channels/</guid>
+      <description>&lt;p&gt;This post introduce about channels in golang, a powerful feature
+This for testing&lt;/p&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>createClass vs Component in React</title>
+      <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
+      <pubDate>Thu, 20 Oct 2016 15:55:47 +0700</pubDate>
       
-        <item>
-          <title>Haskell Fundamentals</title>
-          <link>https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/</link>
-          <pubDate>Sun, 20 Nov 2016 08:37:59 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/</guid>
-          <description>&lt;p&gt;Các function chúng ta định nghĩa cho tới nay bị giới hạn trong ở những thao tác cơ bản như cách gia tăng một số, Trong chương này chúng ta sẽ thảo luận về một số chức năng nâng cao và xem xét về các thao tác trên list.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Program are composed from modules&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Thông thường một chương trình bao gồm nhiều function và định nghĩa kiểu (type definition). Rõ ràng đặt chúng trong một file là 1 ý tưởng tồi tệ. Bởi vậy các ngôn ngữ lập trình hiện đại cung cấp vài công cụ để cấu trúc chương trình bằng cách cho phép nhóm các related definition vào một logic unit được lưu trữ trong 1 file riêng. Trong haskell những unit này gọi là module.&lt;/p&gt;
-
-&lt;p&gt;Ví dụ về định nghĩa một module trong haskell.
-&lt;script src=&#34;//gist.github.com/thanhngvpt/75c8695b03afea2a2961a431b2e602cd.js&#34;&gt;&lt;/script&gt;
-Module bắt đầu với một header là một comment chứa các thông tin, tác giả, ngày tạo, mô tả ngắn gọn về chức năng của module. Dòng đầu tiên bắt đầu bởi keyword module theo sau là tên của module, dòng tiếp là keyword where và các definition thuộc về module. Lưu ý là tên module trái ngược với tên function và tên biến là phải bắt đầu bằng kí tự hoa. Trong haskell có một module đặc biệt tên là Prelude mà nội dung luôn sẵn có (available). &lt;code&gt;Prelude&lt;/code&gt; chứa tất cả các function được định nghĩa trước trong haskell như &lt;code&gt;+&lt;/code&gt; &lt;code&gt;*&lt;/code&gt; &amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Branches in the control flow&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Cho tới nay các ví dụ của chúng ta đều thực hiện mà không bị ràng buộc bởi điều kiện (conditional), phần nay chúng ta sẽ tìm hiểu về điều kiện trong haskell. Cùng xem xét ví dụ sau về sử dụng conditional trong haskell.
-&lt;script src=&#34;//gist.github.com/thanhngvpt/70c93748bd09994625e59ab264485eff.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Binder&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Một binder sẽ bind value tới một name, và sau đó ta có thể truy cập value thông qua name.
-&lt;script src=&#34;//gist.github.com/thanhngvpt/7f93e3621a2866445c5b9133fe32e339.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Tuple combinding different data items&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Cho tới nay chúng ta mới chỉ biết cách truyền nhiều tham số vào function nhưng chưa biết cách tạo function trả về nhiều value. Chúng ta có thể thực hiện điều này bằng cách sử dụng tuple.
-Một tuple sẽ kết hợp nhiều thành phần thành một compound value, tuy nhiên việc kiến tạo một compound value mới chỉ là một nửa câu chuyện, nửa còn lại ta cần decompound, để làm làm vậy haskell hỗ trợ sẵn ta 2 function là fst và snd. Với fst và snd ta không sử dụng một variable để tham chiếu đến toàn bộ compound value thay vào đó ta  phải phân tách cặp thành các thành phần &lt;code&gt;x&lt;/code&gt; &lt;code&gt;y&lt;/code&gt; quá trình này được gọi là decomposition pattern matching&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Method and decorator in Python</title>
-          <link>https://thanhngvpt.github.io/post/python/method-and-decorator/</link>
-          <pubDate>Sat, 12 Nov 2016 13:03:32 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/python/method-and-decorator/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;What is decorators?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Một decorator đơn giản là một function nhận vào một function khác làm argument và thay thế function đó bằng một function đã modified.
-&lt;script src=&#34;//gist.github.com/thanhngvpt/e87181a5901bf0621a6d7f39cb941bf8.js&#34;&gt;&lt;/script&gt;
-Ví dụ này thực chất là decorator chẳng làm gì cả nó chỉ đơn giản là trả về function vừa nhận vào. Cùng xem xét một ví dụ phức tạp hơn.&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/d10d9df3b4b08327c9cae4584710d3df.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;What is methods?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Một method là một function được bound tới một instance của class, với first parameter được truyền implicit là một instance (self)
-&lt;script src=&#34;//gist.github.com/thanhngvpt/1b7c3d84dfd4b0242a9051dcacfb8627.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Static method&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Static method là một plain function được gọi thông qua class hoặc class instance&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Class method&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Class method là một function được bound tới class, với first parameter được truyền implicit là class object đó (cls)&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Object oriented programming in Python</title>
-          <link>https://thanhngvpt.github.io/post/python/oop/</link>
-          <pubDate>Wed, 09 Nov 2016 03:02:06 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/python/oop/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;OOP concepts&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;OOP có các concept như sau.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;Class: Là prototype/blueprint của một object. Nó gồm một tập các attributes để mô tả cho object, và attributes = data members + methods = (class vars + instance vars) + methods.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Instance: Là một thực thể đơn được tạo từ một class, đã được cấp phát memory. Kiểu như 1 bản copy của class với attributes riêng biệt với từng instance riêng.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Object: Là chỉ một thực thể có attributes. Và hoàn toàn có thể nói một object là một instance của một class.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Class variables: Là các biến được định nghĩa bên trong một class và bên ngoài các method của class đó, &lt;em&gt;nó được chia sẻ cho tất cả các instance của class đó dùng&lt;/em&gt;. Class variables còn được biết đến với tên là static member variables như trong C++, Java, C#. Khi giá trị của class variables thay đổi thì ảnh hưởng tới tất cả các instance của class đó.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Instance variables: Là các biến chỉ có thể sử dụng bởi chính instance đó.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Curl usefuls</title>
-          <link>https://thanhngvpt.github.io/post/linux/curl-usefuls/</link>
-          <pubDate>Tue, 08 Nov 2016 10:41:31 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/linux/curl-usefuls/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;What is curl?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Curl là công cụ hỗ trợ transfer data qua một URL, đây là một util khá tiện dụng, được ứng dụng tương đối phổ biến hiện nay ví dụ dùng để test restful api, upload file lên ftp server &amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;GET&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/f4b85fc08dcb40f505d524bcd8e1c92e.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;POST&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/221e834872b9313886ae82baac662ef8.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Header&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/e9ae247a5b0289f4eca2c2a2d94ac149.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;OAuth&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/f157f76789ce1f08535881e9cc537a6b.js&#34;&gt;&lt;/script&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Interface in go</title>
-          <link>https://thanhngvpt.github.io/post/go/interface-in-go/</link>
-          <pubDate>Wed, 02 Nov 2016 11:28:04 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/go/interface-in-go/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;What is an interface?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Interface là một tập các methods và cũng là một type&lt;/em&gt;. Nói theo cách của go thì interface là những actions mà type có thể execute thay vì những loại data mà type có thể hold như trong vài ngôn ngữ.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Implement an interface&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Trong go không có từ khóa &lt;code&gt;implement&lt;/code&gt; tường minh như một vài ngôn ngữ, và để implement một interface chỉ cần implement một trong các method có trong interface.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Empty interface&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Empty interface là &lt;code&gt;interface{}&lt;/code&gt;, empty interface không có method nào, vì trong go không có keyword implement nên mọi type đều implement ít nhất là zero method và như vậy là thỏa mãn điều kiện implement của empty interface. Đây chính là nguồn gốc của những phức tạp khi sử dụng interface. Ví dụ với function &lt;code&gt;doSomthing()&lt;/code&gt; dưới đây. &lt;script src=&#34;//gist.github.com/thanhngvpt/1e6dc031374ea543a70c90a9ad0f7f53.js&#34;&gt;&lt;/script&gt;
-argument v trong function &lt;code&gt;doSomething()&lt;/code&gt; có type là &lt;code&gt;interface{}&lt;/code&gt; chứ không phải any type như nhiều người lầm tưởng. Phân tích thêm chút phần này nào, flow sẽ là khi truyền 1 vào &lt;code&gt;doSomthing()&lt;/code&gt; một argument go runtime sẽ thực hiện type conversion nếu cần thiết và convert value sang &lt;code&gt;interface{}&lt;/code&gt; value. Mọi value đều chỉ có chính xác 1 type khi runtime và type của &lt;code&gt;v&lt;/code&gt; sẽ là &lt;code&gt;interface{}&lt;/code&gt;. Vậy dữ liệu thực tế được truyền vào &lt;code&gt;doSomthing()&lt;/code&gt; là &lt;code&gt;interface{}&lt;/code&gt; value à? Có gì đó sai sai nhỉ? Lại phân tích tiếp nào.&lt;/p&gt;
-
-&lt;p&gt;Một interface value được kiến tạo vởi 2 phần data như sau:
-    - Một con trỏ trỏ tới method table dành cho underlying type của interface value.
-    - Một phần trỏ tới data thực sự được lưu trữ bởi interface value.&lt;/p&gt;
-
-&lt;p&gt;Cùng xem xét một ví dụ về interface như sau &lt;script src=&#34;//gist.github.com/thanhngvpt/7ab0a20f868e9ee511cff8c4f17bda5d.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-
-&lt;p&gt;Trong ví dụ trên ta khai báo biến slice &lt;code&gt;vehicles&lt;/code&gt; là &lt;code&gt;Vehicle&lt;/code&gt; value (interface value), mỗi phần tử của &lt;code&gt;vehicles&lt;/code&gt; đều có underlying data khác nhau.&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Multiple monitor i3wm</title>
-          <link>https://thanhngvpt.github.io/post/linux/multiple-monitor-i3wm/</link>
-          <pubDate>Thu, 27 Oct 2016 15:42:47 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/linux/multiple-monitor-i3wm/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;What is i3?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;i3 is a tiling window manager, completely written from scratch. The target platforms are GNU/Linux and BSD operating systems, our code is Free and Open Source Software (FOSS) under the BSD license. i3 is primarily targeted at advanced users and developers. Based upon the experiences we made when wanting to hack/fix wmii, we agreed upon the following goals for i3&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;strong&gt;Working with multiple monitor&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Kiểm tra xem monitor đã được kết nối vào hệ thống chưa. Mở terminal và chạy lệnh.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;xrandr&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;được thông tin dạng như sau&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Screen 0: minimum 8 x 8, current 2732 x 768, maximum 32767 x 32767
-LVDS1 connected 1366x768+1366+0 (normal left inverted right x axis y axis) 310mm x 170mm
-   1366x768      60.10*+
-   1024x768      60.00  
-   1024x576      60.00  
-   960x540       60.00  
-   800x600       60.32    56.25  
-   864x486       60.00  
-   640x480       59.94  
-   720x405       60.00  
-   680x384       60.00  
-   640x360       60.00  
-DP1 disconnected (normal left inverted right x axis y axis)
-HDMI1 disconnected (normal left inverted right x axis y axis)
-VGA1 connected 1366x768+0+0 (normal left inverted right x axis y axis) 410mm x 230mm
-   1366x768      59.79*+
-   1280x1024     60.02  
-   1280x720      60.00  
-   1024x768      60.00  
-   800x600       60.32  
-   640x480       59.94  
-   720x400       70.08  
-VIRTUAL1 disconnected (normal left inverted right x axis y axis)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Chạy tiếp lệnh.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;xrandr --ouput VGA1 --auto --left-of LVDS1
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Trong đó:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;VGA1, LVDS, HDMI1 là tên của các monitor device đã connect vào trong hệ thông.&lt;/li&gt;
-&lt;li&gt;Các tham số: &amp;ndash;output, &amp;ndash;auto, &amp;ndash;left-of quyết định hiển thị của monitor (xem help để biết thêm).&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Xem thêm tại &lt;a href=&#34;https://i3wm.org/docs/userguide.html#multi_monitor&#34;&gt;mulitple monitor in i3wm&lt;/a&gt;&lt;/p&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Django practices</title>
-          <link>https://thanhngvpt.github.io/post/python/django/django-practices/</link>
-          <pubDate>Wed, 26 Oct 2016 11:20:47 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/python/django/django-practices/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;What is django?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Lời mô tả súc tích từ &lt;a href=&#34;https://djangoproject.com&#34;&gt;https://djangoproject.com&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The web framework for perfectionists with deadlines&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Django là một MVT framework&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Manage dependencies&lt;/strong&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;pip freeze &amp;gt; requirements.txt
-pip install -r requirements.txt
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;strong&gt;Project layout&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Đặt tên app ngắn gọn, súc tích nhất có thể, nên cố gắng đặt tên bằng 1 chữ.&lt;/li&gt;
-&lt;li&gt;Sử dụng kiến trúc nhiều app nhỏ thay vì một app lớn.&lt;/li&gt;
-&lt;li&gt;Sử dụng triệt để các app built-in và 3rd-party app.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Settings&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sử dụng nhiều file settings cho mỗi env: production, dev, staging, testing.&lt;/li&gt;
-&lt;li&gt;Sử dụng file settings cho mỗi user.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Tất cả các file settings đều kế thừa từ base.&lt;/p&gt;
-
-&lt;p&gt;INSTALLED_APP += (&amp;lsquo;debug_toolbar&amp;rsquo;, )&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Fat models, thin views&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Cố gắng giữ cho views đơn giản nhất có thể.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Deployment&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Webserver: nginx + gunicorn + supervisord + docker.&lt;/li&gt;
-&lt;li&gt;Static server: nginx, or amazone S3, CDN.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Asynchronous&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sử dụng celery để thực thi các task async.&lt;/li&gt;
-&lt;li&gt;Sử dụng redis làm message queue cho celery.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Monitor error&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Sử dụng triệt để python logger.&lt;/li&gt;
-&lt;li&gt;Sử dụng sentry.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Debugging&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Debug sử dụng trực tiếp của pycharm.&lt;/li&gt;
-&lt;li&gt;Sử dụng thêm django-debug-toolbar.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Vim usefuls</title>
-          <link>https://thanhngvpt.github.io/post/tools/vim-usefuls/</link>
-          <pubDate>Sun, 23 Oct 2016 00:13:54 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/tools/vim-usefuls/</guid>
-          <description>&lt;p&gt;Vim là 1 trình soạn thảo văn bản nhỏ gọn nhưng cực kì khỏe, nếu được cài đầy đủ plugin nó hoàn toàn có thể sánh ngang các IDE hầm hố. Vim được khá nhiều dev lão luyện dùng điều này cho thấy nó khá tốt và cần đưa vào diện tình nghi ngay nếu chưa biết gì về nó.&lt;/p&gt;
-
-&lt;p&gt;Vim mạnh mẽ nhờ hệ thống plugin khổng lồ đáp ứng hầu hết các yêu cầu của các dev, để cài đặt plugin cho vim ta có thể sử dụng nhiều cách, tuy nhiên cách được sử dụng phổ biến và được khuyến khích là sử dụng một plugin manager, plugin manager lại có vài cái tên để lựa chọn như vundle, neobundle, pathogen &amp;hellip; trong số này thì vundle là cái được khuyến khích. Để cài một plugin sử dụng vundle có thể thêm plugin đó vào file .vimrc hoặc khởi động vim và chạy lệnh :PluginInstall name. Dưới đây là danh sách các plugin nên có.&lt;/p&gt;
-
-&lt;p&gt;Các plugin hay nên cài trong vim: nerdtree, auto-pairs, neocomplete, syntastic, ack, gitv, fugitive.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Các câu lệnh và thao tác hữu ích trong vim&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;windows&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Chia cửa sổ hiện tại thành 2 cửa sổ nằm ngang ctrl + w, ctrl + S (shift + s).&lt;/li&gt;
-&lt;li&gt;Chia cửa sổ hiện tại thành 2 cửa sổ nằm dọc ctrl + w, ctrl + v&lt;/li&gt;
-&lt;li&gt;Di chuyển qua lại giữa các cửa số nhấn ctrl+w 2 lần hoặc ấn ctrl+w rồi sử dụng phím di duyển (gồm: hjkl hoặc các phím mũi tên).&lt;/li&gt;
-&lt;li&gt;Thay đổi kích thước cửa sổ:
-
-&lt;ul&gt;
-&lt;li&gt;Horizontal (ngang) gõ lệnh :&lt;number_of_column&gt;winc +/- (tăng/giảm).&lt;/li&gt;
-&lt;li&gt;Vertical (dọc) gõ lệnh :&lt;number_of_comlumn&gt;winc &amp;gt;/&amp;lt; (tăng/giảm).&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Simple Python server</title>
-          <link>https://thanhngvpt.github.io/post/python/simple-python-server/</link>
-          <pubDate>Sat, 22 Oct 2016 09:07:38 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/python/simple-python-server/</guid>
-          <description>&lt;p&gt;Server là từ ngữ khá thần thánh và phổ biến trong giới IT, định nghĩa về server theo wikipedia như sau.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;a server is a computer program or a device that provides functionality for other programs or devices&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Hiểu biết sâu về server sẽ rất có ích cho các ITer. Bài viết này sẽ xem xét về ứng dụng http server built-in của python để chia sẻ file trong mạng LAN.&lt;/p&gt;
-
-&lt;p&gt;cd tới thư mục muốn chia sẻ rồi chạy lệnh&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# python 3
-python -m http.server
-#
-# python 2
-python2 -m SimpleHTTPServer
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>Mode algorithm</title>
-          <link>https://thanhngvpt.github.io/post/go/mode-algorithm/</link>
-          <pubDate>Fri, 21 Oct 2016 14:15:20 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/go/mode-algorithm/</guid>
-          <description>&lt;p&gt;Mode algorithm là thuật toán được sử dụng để tìm ra phần tử lặp lại nhiều nhất trong một array. Source dưới đây cài đặt cho thuật toán tìm mode của 1 array sử dụng ngôn ngữ Go.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;// sử dụng slice
-function sliceMode(input []int) int {
-    count := make([]input, len(input))
-    maxValue := 0
-    maxKey := 0
-    for i := range input {
-        count[input[i]]++
-        if count[input[i]] &amp;gt; maxValue {
-            maxValue = count[input[i]]
-            maxKey = input[i]
-        }
-    }
-
-    return maxKey
-}
-
-// sử dụng map
-function mapMode([]input) int {
-    count := make(map[int]int)
-    maxValue, maxKey := 0, 0
-    for i := range input {
-        count[input[i]]++
-        if count[input[i]] &amp;gt; maxValue {
-            maxValue = count[input[i]]
-            maxKey = input[i]
-        }
-    }
-
-    return maxKey
-}
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-        </item>
-      
-    
-      
-        <item>
-          <title>createClass vs Component in React</title>
-          <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
-          <pubDate>Thu, 20 Oct 2016 15:55:47 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
-          <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
+      <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
+      <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;// cách 1
 const = react.createClass({
@@ -564,39 +92,45 @@ Comment.defaultProps = {};
 &lt;li&gt;mixin: cách 1 hỗ trợ, cách 2 không hỗ trợ&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-      
+    </item>
     
+    <item>
+      <title>Python tricks</title>
+      <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
+      <pubDate>Thu, 20 Oct 2016 14:57:11 +0700</pubDate>
       
-        <item>
-          <title>Python tricks</title>
-          <link>https://thanhngvpt.github.io/post/python/python-tricks/</link>
-          <pubDate>Thu, 20 Oct 2016 14:57:11 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
-          <description>&lt;p&gt;&lt;strong&gt;Unpacking&lt;/strong&gt;&lt;/p&gt;
+      <guid>https://thanhngvpt.github.io/post/python/python-tricks/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Unpacking&lt;/strong&gt;&lt;/p&gt;
 
-&lt;script src=&#34;//gist.github.com/thanhngvpt/4c11f8cb2d77547dc7d1344ffc720e2e.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Negative indexing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/e7af21b776415714e46104c0d35e70e5.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Slicing&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/736739edb57a3deba50209e19706d96a.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Iterating&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/cf245eb17d152bd7dc0677902db2cfbe.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;&lt;strong&gt;Zipping and unzipping&lt;/strong&gt;&lt;/p&gt;
-
-&lt;script src=&#34;//gist.github.com/thanhngvpt/2ba6195c0cb95aad3ea58f9add05c66c.js&#34;&gt;&lt;/script&gt;
+&lt;pre&gt;&lt;code&gt;#1
+a, b, c = 1, 2, 3
+d = a, b, c
+print(d, type(d)) # (1, 2, 3) - tuple
+#2
+a, b, c = (2 * i + 1 for i in range(3))
+d = a, b, c
+print(d) # (1, 3, 5)
+#3
+a, (b, c), d = [1, (2, 3), 5]
+print(a, b, c, d) # 1 2 3 5
+#4 - swapping variables
+a, b = 1, 2
+a, b = b, a
+print(a, b) # 2 1
+#5
+&lt;/code&gt;&lt;/pre&gt;
 </description>
-        </item>
-      
+    </item>
     
-
+    <item>
+      <title>ES6 features</title>
+      <link>https://thanhngvpt.github.io/post/es/es6-features/</link>
+      <pubDate>Thu, 20 Oct 2016 14:38:05 +0700</pubDate>
+      
+      <guid>https://thanhngvpt.github.io/post/es/es6-features/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus excepturi dignissimos perspiciatis magnam provident molestias voluptatem enim, blanditiis voluptate voluptas. Atque, natus? Id assumenda, corporis recusandae perferendis, quidem at tempora!&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Thanh&#39;s Notepad </title>
+    <title>React Component on David&#39;s Notepad</title>
     <link>https://thanhngvpt.github.io/tags/react-component/index.xml</link>
+    <description>Recent content in React Component on David&#39;s Notepad</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <author>thanhngvpt</author>
-    <rights>(C) 2016</rights>
-    <updated>0001-01-01 00:00:00 &#43;0000 UTC</updated>
-
+    <atom:link href="https://thanhngvpt.github.io/tags/react-component/index.xml" rel="self" type="application/rss+xml" />
     
+    <item>
+      <title>createClass vs Component in React</title>
+      <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
+      <pubDate>Thu, 20 Oct 2016 15:55:47 +0700</pubDate>
       
-        <item>
-          <title>createClass vs Component in React</title>
-          <link>https://thanhngvpt.github.io/post/react/create-class-vs-component/</link>
-          <pubDate>Thu, 20 Oct 2016 15:55:47 ICT</pubDate>
-          <author>thanhngvpt</author>
-          <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
-          <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
+      <guid>https://thanhngvpt.github.io/post/react/create-class-vs-component/</guid>
+      <description>&lt;p&gt;Để tạo một react component ta có thể dùng cú pháp&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;// cách 1
 const = react.createClass({
@@ -82,9 +80,7 @@ Comment.defaultProps = {};
 &lt;li&gt;mixin: cách 1 hỗ trợ, cách 2 không hỗ trợ&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        </item>
-      
+    </item>
     
-
   </channel>
 </rss>
