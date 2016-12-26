@@ -2,6 +2,71 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://thanhngvpt.github.io/</loc>
+    <lastmod>2016-12-27T04:37:07+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/ai/test/</loc>
+    <lastmod>2016-12-27T04:37:07+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/ai/ml/introduction/</loc>
+    <lastmod>2016-11-23T14:18:30+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/haskell/translate/hfm/2_fundamentals/</loc>
+    <lastmod>2016-11-20T08:37:59+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/python/method-and-decorator/</loc>
+    <lastmod>2016-11-12T13:03:32+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/python/oop/</loc>
+    <lastmod>2016-11-09T03:02:06+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/linux/curl-usefuls/</loc>
+    <lastmod>2016-11-08T10:41:31+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/go/interface-in-go/</loc>
+    <lastmod>2016-11-02T11:28:04+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/linux/multiple-monitor-i3wm/</loc>
+    <lastmod>2016-10-27T15:42:47+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/python/django/django-practices/</loc>
+    <lastmod>2016-10-26T11:20:47+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/tools/vim-usefuls/</loc>
+    <lastmod>2016-10-23T00:13:54+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/python/simple-python-server/</loc>
+    <lastmod>2016-10-22T09:07:38+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thanhngvpt.github.io/post/go/mode-algorithm/</loc>
+    <lastmod>2016-10-21T14:15:20+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://thanhngvpt.github.io/post/react/create-class-vs-component/</loc>
     <lastmod>2016-10-20T15:55:47+07:00</lastmod>
   </url>
@@ -9,75 +74,6 @@
   <url>
     <loc>https://thanhngvpt.github.io/post/python/python-tricks/</loc>
     <lastmod>2016-10-20T14:57:11+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/post/es/es6-features/</loc>
-    <lastmod>2016-10-20T14:38:05+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/</loc>
-    <lastmod>2016-10-20T15:55:47+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/categories/ecmascript/</loc>
-    <lastmod>2016-10-20T15:55:47+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/tags/idomatic-python/</loc>
-    <lastmod>2016-10-20T14:57:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/post/</loc>
-    <lastmod>2016-10-20T15:55:47+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/tags/python/</loc>
-    <lastmod>2016-10-20T14:57:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/categories/python/</loc>
-    <lastmod>2016-10-20T14:57:11+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/tags/react/</loc>
-    <lastmod>2016-10-20T15:55:47+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/tags/react-component/</loc>
-    <lastmod>2016-10-20T15:55:47+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/tags/reactjs/</loc>
-    <lastmod>2016-10-20T15:55:47+07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://thanhngvpt.github.io/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>

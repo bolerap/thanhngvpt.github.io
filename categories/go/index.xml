@@ -47,7 +47,7 @@ argument v trong function &lt;code&gt;doSomething()&lt;/code&gt; có type là &l
           <pubDate>Fri, 21 Oct 2016 14:15:20 ICT</pubDate>
           <author>thanhngvpt</author>
           <guid>https://thanhngvpt.github.io/post/go/mode-algorithm/</guid>
-          <description>&lt;p&gt;Mode algorithm là thuật toán được sử dụng để tìm ra phần tử lặp lại nhiều nhất trong một array. Source dưới đây cài đặt cho thuật toán tìm mode của 1 array sử dụng ngôn ngữ Go.&lt;/p&gt;
+          <description>&lt;p&gt;aaaa Mode algorithm là thuật toán được sử dụng để tìm ra phần tử lặp lại nhiều nhất trong một array. Source dưới đây cài đặt cho thuật toán tìm mode của 1 array sử dụng ngôn ngữ Go.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;// sử dụng slice
 function sliceMode(input []int) int {
